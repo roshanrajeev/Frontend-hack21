@@ -1,0 +1,26 @@
+.btn {
+  display: inline-block;
+
+  &:not(:last-child) {
+    margin-right: 1rem;
+  }
+  
+  &--large {
+    font-size: 2.1rem;
+    width: 19.4rem;
+    //2.621
+    height: 7.4rem;
+    border-radius: 8.4rem;
+    text-align: center;
+    line-height: 7.4rem;
+    vertical-align: center;
+  }
+
+  &--blue {
+    background-color: $color-blue;
+  }
+
+  &--ring {
+    border: 1px solid $color-blue;
+  }
+}
