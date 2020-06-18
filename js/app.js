@@ -48,4 +48,41 @@
 
     }
   });
-})()
+})();
+
+//faq section
+
+function freqAsked() {
+  const faq = document.querySelector('.faq');
+  const qns = document.querySelectorAll('.faq__question');
+  const solns = document.querySelectorAll('.faq__solution');
+
+  
+  document.body.addEventListener('click', function(e) {
+    if(e.target.classList.contains('faq__question')) {
+      const soln = e.target.nextElementSibling;
+      solns.forEach(function(sol) {
+        if(sol.className === 'faq__solution visible' && soln != sol) {
+          sol.className = 'faq__solution hidden';
+        }
+      });
+
+      if(soln.className === 'faq__solution hidden') {
+        soln.className = 'faq__solution visible';
+      }
+      else {
+        soln.className = 'faq__solution hidden';
+      }
+    } else if(e.target.classList.contains('faq__solution')) {
+      console.log(e.target);
+    } else {
+      solns.forEach(function(sol) {
+        if(sol.className === 'faq__solution visible') {
+          sol.className = 'faq__solution hidden';
+        }
+      });
+    }
+  })
+};
+
+freqAsked();

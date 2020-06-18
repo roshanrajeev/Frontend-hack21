@@ -96,3 +96,43 @@
     left: 5rem;
   }
 }
+
+.faq {
+  &__container {
+    user-select: none;
+    font-size: 1.4rem;
+    font-weight: 300;
+
+    &:not(:last-child) {
+      margin-bottom: 2rem;
+    }
+  }
+  
+  &__question {
+    position: relative;
+    background-color: $color-grey-dark-text;
+    cursor: pointer;
+    padding: 2rem 2rem;
+
+    span {
+      position: absolute;
+      right: 2.4rem;
+      top: 50%;
+      transform: translate(0, -50%);
+      font-size: 2.4rem;
+    }
+  }
+  
+  &__solution {
+    background-color: $color-grey-dark-body;
+    padding: 2rem 2rem;
+  }
+  
+  .hidden {
+    display: none;
+  }
+
+  .visible {
+    display: block;
+  }
+}
