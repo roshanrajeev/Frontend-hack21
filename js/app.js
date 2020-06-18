@@ -1,3 +1,5 @@
+//Shapes animation
+
 (function shapesTranform() {
   const fast = document.getElementById('fast');
   const slow = document.getElementById('slow');
