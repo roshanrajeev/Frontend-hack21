@@ -38,6 +38,16 @@ a {
     color: $color-red;
   }
 
+  &--main {
+    margin-bottom: 1rem;
+  }
+
+  &--sub {
+    font-size: $default-font-size;
+    font-weight: 400;
+
+  }
+
   span {
     display: block;
   }
@@ -48,4 +58,9 @@ a {
   font-weight: 400;
   line-height: 2.4rem;
   color: $color-white;
+}
+
+.heading-tertiary {
+  font-size: 2rem;
+  font-weight: 300;
 }

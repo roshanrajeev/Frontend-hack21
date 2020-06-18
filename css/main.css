@@ -54,6 +54,15 @@ a {
   color: #C30000;
 }
 
+.heading-secondary--main {
+  margin-bottom: 1rem;
+}
+
+.heading-secondary--sub {
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
 .heading-secondary span {
   display: block;
 }
@@ -63,6 +72,11 @@ a {
   font-weight: 400;
   line-height: 2.4rem;
   color: #fff;
+}
+
+.heading-tertiary {
+  font-size: 2rem;
+  font-weight: 300;
 }
 
 .u-margin-bottom-small {
@@ -238,6 +252,51 @@ a {
 .img-grid__text-3 {
   left: 8rem;
   bottom: -6.4rem;
+}
+
+.scheduler__container {
+  padding: 2rem;
+  width: 80%;
+  background-color: #111111;
+}
+
+.scheduler__container:nth-child(1) {
+  border-left: 3px solid #C30000;
+}
+
+.scheduler__container:nth-child(2) {
+  border-left: 3px solid #FF6B35;
+}
+
+.scheduler__container:nth-child(3) {
+  border-left: 3px solid #BF00FF;
+}
+
+.scheduler__container:nth-child(4) {
+  border-left: 3px solid #FF00AA;
+}
+
+.scheduler__container:not(:last-child) {
+  margin-bottom: 3rem;
+}
+
+.scheduler__heading {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.scheduler__body {
+  font-size: 1.4rem;
+  line-height: 1.7;
+  font-weight: 300;
+}
+
+.scheduler__body--main {
+  display: block;
+}
+
+.scheduler__body--time {
+  display: block;
 }
 
 .shapes {
@@ -740,5 +799,29 @@ a {
   color: #111111;
   line-height: 0.3;
   z-index: -1;
+}
+
+.speakers {
+  margin-bottom: 25rem;
+}
+
+.schedule {
+  margin-bottom: 25rem;
+}
+
+.rewind {
+  position: relative;
+}
+
+.rewind__video-container {
+  border: 1px solid orangered;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.rewind__video {
+  border: 1px solid yellow;
 }
 /*# sourceMappingURL=main.css.map */
