@@ -4,6 +4,7 @@
 
 .about {
   position: relative;
+  margin-bottom: 25rem;
 
   &__bg {
     position: absolute;
@@ -15,10 +16,5 @@
     color: $color-grey-dark-text;
     line-height: 0.3;
     z-index: -1;
-  }
-
-  &__heading-animated {
-    transform: translateY(-100px);
-    opacity: 0;
   }
 }

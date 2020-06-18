@@ -44,13 +44,14 @@ a {
 }
 
 .heading-secondary {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
   font-size: 6.4rem;
   color: #fff;
   font-weight: 600;
   line-height: 1.16;
+}
+
+.heading-secondary--pink {
+  color: #C30000;
 }
 
 .heading-secondary span {
@@ -70,6 +71,14 @@ a {
 
 .u-margin-bottom-medium {
   margin-bottom: 2.4rem;
+}
+
+.u-margin-bottom-large {
+  margin-bottom: 5rem;
+}
+
+.u-text-align-right {
+  text-align: right;
 }
 
 .u-not-select {
@@ -143,6 +152,92 @@ a {
 
 .btn--anim:hover::before, .btn--anim:hover::after {
   top: 0;
+}
+
+.img-grid__container {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.img-grid__container::after {
+  content: "";
+  position: absolute;
+  background-color: #C30000;
+  width: 30rem;
+  height: 40rem;
+  z-index: -1;
+}
+
+.img-grid__container--left {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.img-grid__container--left::after {
+  left: -2rem;
+  top: 2rem;
+}
+
+.img-grid__container--center {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.img-grid__container--center::after {
+  left: 2rem;
+  top: 2rem;
+}
+
+.img-grid__container--right {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.img-grid__container--right::after {
+  right: 2rem;
+  top: 2rem;
+}
+
+.img-grid__image {
+  height: 40rem;
+  width: 30rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.img-grid__text {
+  position: absolute;
+}
+
+.img-grid__text--main {
+  display: block;
+  font-size: 2.8rem;
+}
+
+.img-grid__text--sub {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 300;
+}
+
+.img-grid__text-1 {
+  left: 0;
+  bottom: -6.4rem;
+}
+
+.img-grid__text-2 {
+  left: 4rem;
+  bottom: -6.4rem;
+}
+
+.img-grid__text-3 {
+  left: 8rem;
+  bottom: -6.4rem;
 }
 
 .shapes {
@@ -632,6 +727,7 @@ a {
 
 .about {
   position: relative;
+  margin-bottom: 25rem;
 }
 
 .about__bg {
@@ -644,11 +740,5 @@ a {
   color: #111111;
   line-height: 0.3;
   z-index: -1;
-}
-
-.about__heading-animated {
-  -webkit-transform: translateY(-100px);
-          transform: translateY(-100px);
-  opacity: 0;
 }
 /*# sourceMappingURL=main.css.map */

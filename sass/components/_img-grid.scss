@@ -1,0 +1,78 @@
+.img-grid {
+  &__container {
+    position: relative;
+    display: flex;
+
+    &::after {
+      content: "";
+      position: absolute;
+      background-color: $color-red;
+      width: 30rem;
+      height: 40rem;
+      z-index: -1;
+    }
+
+    &--left {
+      justify-content: flex-start;
+
+      &::after {
+        left: -2rem;
+        top: 2rem;
+      }
+    }
+
+    &--center {
+      justify-content: center;
+
+      &::after {
+        left: 2rem;
+        top: 2rem;
+      }
+    }
+
+    &--right {
+      justify-content: flex-end;
+
+      &::after {
+        right: 2rem;
+        top: 2rem;
+      }
+    }
+  }
+
+  &__image {
+    height: 40rem;
+    width: 30rem;
+    object-fit: cover;
+  }
+
+  &__text {
+    position: absolute;
+
+    &--main {
+      display: block;
+      font-size: 2.8rem;
+    }
+
+    &--sub {
+      display: block;
+      font-size: $default-font-size;
+      font-weight: 300;
+    }
+
+    &-1 {
+      left: 0;
+      bottom: -6.4rem;
+    }
+
+    &-2 {
+      left: 4rem;
+      bottom: -6.4rem;
+    }
+
+    &-3 {
+      left: 8rem;
+      bottom: -6.4rem;
+    }
+  }
+}
