@@ -15,4 +15,37 @@
     slow.style.transform = `translateY(-${xslow}px)`;
     medium.style.transform = `translateY(-${xmedium}px)`;
   });
+
 })();
+
+//About bg anim
+
+(function abtBgAnim() {
+  window.addEventListener('scroll', function(e) {
+    const bg = document.querySelector('.about__bg');
+    const bgRect = bg.getBoundingClientRect();
+    if(bgRect.top < 760) {
+      let opacity = (bgRect.top + 450) / 1210;
+      bg.style.color = `rgba(17, 17, 17, ${opacity})`;
+      // console.log(opacity);
+    }
+  });
+})();
+
+//fade in top 
+
+(function fadeintop() {
+  const heading = document.querySelector('.about__heading-animated');
+  window.addEventListener('scroll', function(e) {
+    const bg = document.querySelector('.about__bg');
+    const bgRect = bg.getBoundingClientRect();
+    if(bgRect.top < 760) {
+      let opacity = 1 - (bgRect.top-300) / 460;
+      let pos = (-1 * opacity + 1) * 100
+      heading.style.opacity = opacity;
+      heading.style.transform = `translateY(-${pos}px)`;
+      console.log(pos);
+
+    }
+  });
+})()

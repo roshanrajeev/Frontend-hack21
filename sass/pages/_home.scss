@@ -1,0 +1,24 @@
+.header {
+  margin-bottom: 25rem;
+}
+
+.about {
+  position: relative;
+
+  &__bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    font-weight: 300  ;
+    font-size: 50vw;
+    color: $color-grey-dark-text;
+    line-height: 0.3;
+    z-index: -1;
+  }
+
+  &__heading-animated {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+}
