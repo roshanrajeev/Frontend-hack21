@@ -98,6 +98,8 @@
 }
 
 .faq {
+  margin-bottom: 25rem;
+
   &__container {
     user-select: none;
     font-size: 1.4rem;
@@ -134,5 +136,62 @@
 
   .visible {
     display: block;
+  }
+}
+
+.sponsors {
+  margin-bottom: 10rem;
+
+  .row {
+    justify-content: center;
+  }
+
+  &__img {
+    &:not(:last-child) {
+      margin-right: 5rem;
+    }
+  }
+
+  &__heading {
+    width: fit-content;
+    font-size: 1.4rem;
+    border-bottom: 1px solid $color-white;
+    margin: 0 auto;
+    padding-bottom: .5rem;
+    margin-bottom: 2rem;
+  }
+  
+  &__container {
+    &--head {
+
+    }
+
+    &--main {
+
+    }
+
+    &--student-partners {
+      margin-bottom: 8rem;
+
+      h5 {
+        margin-bottom: 8rem;
+      }
+    }
+
+    &--community-partners {
+      margin-bottom: 8rem;
+
+      .row {
+        &:not(:nth-child(2)) {
+          margin-top: -9rem;
+        }
+      }
+    }
+
+    &--media-partners {
+      h5 {
+        margin-bottom: 8rem;
+      }
+    }
   }
 }
