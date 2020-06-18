@@ -811,17 +811,67 @@ a {
 
 .rewind {
   position: relative;
+  margin-bottom: 70rem;
 }
 
 .rewind__video-container {
-  border: 1px solid orangered;
+  width: 70vw;
   position: absolute;
   top: 0;
   right: 0;
+  overflow: hidden;
   z-index: -1;
 }
 
+.rewind__video-container::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.55);
+}
+
 .rewind__video {
-  border: 1px solid yellow;
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
+  width: 100vw;
+  -webkit-transform: translateX(-13vw);
+          transform: translateX(-13vw);
+}
+
+.rewind__text-container {
+  margin-top: 9rem;
+}
+
+.testimonial {
+  margin-bottom: 25rem;
+}
+
+.testimonial [class^="col-"]:not(:nth-child(2n)) {
+  margin-right: 1.5rem;
+}
+
+.testimonial .row:not(:last-child) {
+  margin-bottom: 1.5rem;
+}
+
+.testimonial__container {
+  border: 1px solid #BF00FF;
+  padding: 10rem 10rem;
+  position: relative;
+}
+
+.testimonial__quote {
+  font-size: 1.6rem;
+  line-height: 1.7;
+  font-weight: 500;
+}
+
+.testimonial__img-container {
+  position: absolute;
+  top: -3rem;
+  left: 5rem;
 }
 /*# sourceMappingURL=main.css.map */

@@ -29,16 +29,70 @@
 
 .rewind {
   position: relative;
+  margin-bottom: 70rem;
 
   &__video-container {
-    border: 1px solid orangered;
+    // border: 1px solid orangered;
+    width: 70vw;
     position: absolute;
     top: 0;
     right: 0;
+    overflow: hidden;
     z-index: -1;
+
+    &::after {
+      content: "";
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      right: 0;
+      top: 0;
+      background-color: rgba($color-black, 0.55);
+    }
   }
 
   &__video {
-    border: 1px solid yellow;
+    // border: 1px solid yellow;
+    filter: grayscale(1);
+    width: 100vw;
+    transform: translateX(-13vw);
+  }
+
+  &__text-container {
+    margin-top: 9rem;
+  }
+}
+
+.testimonial {
+  margin-bottom: 25rem;
+
+  [class^="col-"] {
+    &:not(:nth-child(2n)) {
+      margin-right: 1.5rem;
+    }
+  }
+
+  .row {
+    &:not(:last-child) {
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  &__container {
+    border: 1px solid $color-purple;
+    padding: 10rem 10rem;
+    position: relative;
+  }
+
+  &__quote {
+    font-size: 1.6rem;
+    line-height: 1.7;
+    font-weight: 500;
+  }
+
+  &__img-container {
+    position: absolute;
+    top: -3rem;
+    left: 5rem;
   }
 }
