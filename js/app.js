@@ -1,6 +1,6 @@
 //Shapes animation
 
-(function docLoad() {
+(function() {
   setTimeout(function() {
     if(document.readyState !== 'loading') {
         console.log("loading");
@@ -17,9 +17,11 @@
       document.body.style.overflowY = 'visible';
     }
   }, 15000);
+  // 15000
 })();
 
-(function shapesTranform() {
+
+(function() {
   const fast = document.getElementById('fast');
   const slow = document.getElementById('slow');
   const medium = document.getElementById('medium');
@@ -39,7 +41,7 @@
 
 //About bg anim
 
-(function abtBgAnim() {
+(function() {
   window.addEventListener('scroll', function(e) {
     const bg = document.querySelector('.about__bg');
     const bgRect = bg.getBoundingClientRect();
@@ -52,7 +54,7 @@
 
 //fade in top 
 
-(function fadeintop() {
+(function() {
   const heading = document.querySelector('.about__heading-animated');
   window.addEventListener('scroll', function(e) {
     const bg = document.querySelector('.about__bg');
@@ -149,7 +151,7 @@ function scrollToLoc() {
       let st = sp;
       if(link === '#about') { st = sp - 280; }
       if(link === '#speakers') { st = sp - 100; }
-      if(link === '#schedule') { st = sp - 100; }
+      if(link === '#schedule') { st = sp - 50; }
       if(link === '#rewind') { st = sp - 100; }
       if(link === '#testimonial') { st = sp - 100; }
       if(link === '#faq') { st = sp - 100; }
@@ -159,3 +161,13 @@ function scrollToLoc() {
   })
 }
 scrollToLoc();
+
+//scheduler animation
+// (function() {
+//   document.querySelector('.schedule').addEventListener('mouseover', function(e) {
+//     if(e.target.className == 'scheduler__container') {
+      
+//     }
+//   })
+  
+// })();

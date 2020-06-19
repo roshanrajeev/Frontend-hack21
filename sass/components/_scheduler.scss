@@ -4,20 +4,12 @@
     width: 80%;
     background-color: $color-grey-dark-text;
 
-    &:nth-child(1) {
-      border-left: 3px solid $color-red;
-    }
-
-    &:nth-child(2) {
-      border-left: 3px solid $color-orange;
-    }
-
-    &:nth-child(3) {
-      border-left: 3px solid $color-purple;
-    }
-
-    &:nth-child(4) {
-      border-left: 3px solid $color-pink;
+    @for $i from 1 through 4 {
+      &:nth-child(#{$i}) {
+        position: relative;
+        overflow: hidden;
+        @include scheduler-anim(nth($color-red $color-orange $color-purple $color-pink , $i));
+      }
     }
 
     &:not(:last-child) {
@@ -28,12 +20,16 @@
   &__heading {
     font-size: 2rem;
     margin-bottom: 2rem;
+    position: relative;
+    z-index: 1;
   }
 
   &__body {
     font-size: 1.4rem;
     line-height: 1.7;
     font-weight: 300;
+    position: relative;
+    z-index: 1;
 
     &--main {
       display: block;

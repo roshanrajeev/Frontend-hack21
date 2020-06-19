@@ -57,11 +57,29 @@
     display: block;
   }
 
-  &__gif{
-    height: 70px;
-    transform: translateY(18rem);
+  &__icon {
+    transform: translateY(20rem);
     animation: loaderDisplay 0.1s;
     animation-fill-mode: both;
     animation-delay: 8s;
+    
+    .spinner{
+      animation: rotator $duration linear infinite;
+      height: 40px;
+
+      .path {
+        stroke-dasharray: $offset;
+        stroke-dashoffset: 0;
+        transform-origin: center;
+        animation:
+          dash $duration ease-in-out infinite, 
+          colors ($duration*4) ease-in-out infinite;
+      }
+    }
   }
+
+  
 }
+
+// Here is where the magic happens
+
