@@ -1,8 +1,14 @@
 .nav {
   display: flex;
   flex-direction: row;
-  position: relative;
+  position: fixed;
+  top: 0;
+  height: 9rem;
+  width: 100%;
+  background-color: $color-black;
   font-size: $default-font-size;
+  z-index: 100;
+  transition: all 0.3s ease;
 
   &__logo-box {
     position: absolute;
@@ -36,5 +42,13 @@
       border-radius: 40px;
       cursor: pointer;
     }
+  }
+
+  &.hidden {
+    transform: translateY(-9rem);
+  }
+
+  &.visible {
+    transform: translateY(0);
   }
 }

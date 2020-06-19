@@ -44,7 +44,7 @@
       let pos = (-1 * opacity + 1) * 100
       heading.style.opacity = opacity;
       heading.style.transform = `translateY(-${pos}px)`;
-      console.log(pos);
+      // console.log(pos);
 
     }
   });
@@ -86,3 +86,64 @@ function freqAsked() {
 };
 
 freqAsked();
+
+//sticky navigation
+const nav = document.querySelector('.nav');
+
+let didScroll;
+let lastScrollTop = 0;
+let delta = 5;
+let navbarHeight = nav.offsetHeight;
+
+console.log(navbarHeight);
+
+window.addEventListener('scroll', function() {
+  didScroll = true;
+});
+
+setInterval(function() {
+  if(didScroll) {
+    hasScrolled();
+    didScroll = false;
+  }
+},250);
+
+function hasScrolled() {
+  let st = window.scrollY;
+
+  if(Math.abs(lastScrollTop - st) <= delta)
+    return;
+  
+  if(st > navbarHeight && st > lastScrollTop) {
+    nav.className = 'nav hidden';
+  } else {
+    if(st + window.offsetHeight < document.offsetHeight) {
+      $('header').removeClass('nav-up').addClass('nav-down');
+    }
+    nav.className = 'nav visible';
+  }
+  lastScrollTop = st;
+}
+
+
+//scroll to location
+function scrollToLoc() {
+  const navList = document.querySelector('.nav__list');
+  navList.addEventListener('click', function(e) {
+    if(e.target.parentElement.classList.contains('nav__item')){
+      const link = e.target.getAttribute('href');
+      const sp = document.querySelector(link).offsetTop;
+      let st = sp;
+      if(link === '#about') { st = sp - 280; }
+      if(link === '#speakers') { st = sp - 100; }
+      if(link === '#schedule') { st = sp - 100; }
+      if(link === '#rewind') { st = sp - 100; }
+      if(link === '#testimonial') { st = sp - 100; }
+      if(link === '#faq') { st = sp - 100; }
+      window.scrollTo(0, st);
+      console.log(sp);
+    }
+    e.preventDefault();
+  })
+}
+scrollToLoc();
