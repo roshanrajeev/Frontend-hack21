@@ -2,11 +2,12 @@
 
 (function docLoad() {
   setTimeout(function() {
-    console.log('yes');
     if(document.readyState !== 'loading') {
+        console.log("loading");
         fireEvent();
     } else {
-      window.addEventListener('onload', (event) => {
+      window.addEventListener('load', (event) => {
+        console.log("load");
         fireEvent();
       });
     }
@@ -45,7 +46,6 @@
     if(bgRect.top < 760) {
       let opacity = (bgRect.top + 450) / 1210;
       bg.style.color = `rgba(17, 17, 17, ${opacity})`;
-      // console.log(opacity);
     }
   });
 })();
@@ -62,8 +62,6 @@
       let pos = (-1 * opacity + 1) * 100
       heading.style.opacity = opacity;
       heading.style.transform = `translateY(-${pos}px)`;
-      // console.log(pos);
-
     }
   });
 })();
@@ -92,7 +90,6 @@ function freqAsked() {
         soln.className = 'faq__solution hidden';
       }
     } else if(e.target.classList.contains('faq__solution')) {
-      console.log(e.target);
     } else {
       solns.forEach(function(sol) {
         if(sol.className === 'faq__solution visible') {
@@ -112,8 +109,6 @@ let didScroll;
 let lastScrollTop = 0;
 let delta = 5;
 let navbarHeight = nav.offsetHeight;
-
-console.log(navbarHeight);
 
 window.addEventListener('scroll', function() {
   didScroll = true;
@@ -159,7 +154,6 @@ function scrollToLoc() {
       if(link === '#testimonial') { st = sp - 100; }
       if(link === '#faq') { st = sp - 100; }
       window.scrollTo(0, st);
-      console.log(sp);
     }
     e.preventDefault();
   })
