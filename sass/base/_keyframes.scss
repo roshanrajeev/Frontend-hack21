@@ -1,0 +1,49 @@
+@keyframes fadeInText-1 {
+  0% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeInText-2 {
+  0% {
+    opacity: 0;
+    transform: scale(1.1) translate(-50%,0);;
+  }
+  80% {
+    opacity: 1;
+    transform: scale(1) translate(-50%,0);;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeInText-3 {
+  0% {
+    opacity: 0;
+    transform: scale(1.1) translate(-50%,0);;
+  }
+  80% {
+    opacity: 1;
+    transform: scale(1) translate(-50%,0);;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes loaderDisplay {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

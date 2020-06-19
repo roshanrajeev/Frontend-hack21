@@ -1,5 +1,23 @@
 //Shapes animation
 
+(function docLoad() {
+  setTimeout(function() {
+    console.log('yes');
+    if(document.readyState !== 'loading') {
+        fireEvent();
+    } else {
+      window.addEventListener('onload', (event) => {
+        fireEvent();
+      });
+    }
+
+    function fireEvent() {
+      document.querySelector('.loader').style.display = 'none';
+      document.body.style.overflowY = 'visible';
+    }
+  }, 15000);
+})();
+
 (function shapesTranform() {
   const fast = document.getElementById('fast');
   const slow = document.getElementById('slow');

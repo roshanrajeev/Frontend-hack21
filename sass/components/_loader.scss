@@ -1,0 +1,67 @@
+.loader {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  background-color: $color-black;
+  top: 0;
+  left: 0;
+  z-index: 1000000;
+  text-align: center;
+  overflow: hidden;
+
+  &__container {
+    position: relative;
+    width: fit-content;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &__text {
+    font-size: 8rem;
+    font-family: 'Righteous', cursive;
+    font-weight: 500;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,0);
+    backface-visibility: hidden;
+    
+    &--1 {
+      animation: fadeInText-1 0.8s ease;
+      opacity: 0;
+      animation-fill-mode: forwards;
+      animation-delay: 4s;
+    }
+
+    &--2 {
+      animation: fadeInText-2 0.8s ease;
+      animation-delay: 4.8s;
+      animation-fill-mode: both;
+      // display: none;
+    }
+
+    &--3 {
+      animation: fadeInText-3 0.5s ease;
+      animation-delay: 5.6s;
+      animation-fill-mode: both;
+      // display: none;
+    }
+  }
+
+  &--hidden {
+    display: none;
+  }
+
+  &--visible {
+    display: block;
+  }
+
+  &__gif{
+    height: 70px;
+    transform: translateY(18rem);
+    animation: loaderDisplay 0.1s;
+    animation-fill-mode: both;
+    animation-delay: 8s;
+  }
+}

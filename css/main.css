@@ -15,6 +15,7 @@ body {
           box-sizing: border-box;
   background-color: #000;
   overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 body {
@@ -101,6 +102,112 @@ a {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+}
+
+@-webkit-keyframes fadeInText-1 {
+  0% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeInText-1 {
+  0% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes fadeInText-2 {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(1.1) translate(-50%, 0);
+            transform: scale(1.1) translate(-50%, 0);
+  }
+  80% {
+    opacity: 1;
+    -webkit-transform: scale(1) translate(-50%, 0);
+            transform: scale(1) translate(-50%, 0);
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeInText-2 {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(1.1) translate(-50%, 0);
+            transform: scale(1.1) translate(-50%, 0);
+  }
+  80% {
+    opacity: 1;
+    -webkit-transform: scale(1) translate(-50%, 0);
+            transform: scale(1) translate(-50%, 0);
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes fadeInText-3 {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(1.1) translate(-50%, 0);
+            transform: scale(1.1) translate(-50%, 0);
+  }
+  80% {
+    opacity: 1;
+    -webkit-transform: scale(1) translate(-50%, 0);
+            transform: scale(1) translate(-50%, 0);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInText-3 {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(1.1) translate(-50%, 0);
+            transform: scale(1.1) translate(-50%, 0);
+  }
+  80% {
+    opacity: 1;
+    -webkit-transform: scale(1) translate(-50%, 0);
+            transform: scale(1) translate(-50%, 0);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes loaderDisplay {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes loaderDisplay {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .btn {
@@ -253,6 +360,90 @@ a {
 .img-grid__text-3 {
   left: 8rem;
   bottom: -6.4rem;
+}
+
+.loader {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  background-color: #000;
+  top: 0;
+  left: 0;
+  z-index: 1000000;
+  text-align: center;
+  overflow: hidden;
+}
+
+.loader__container {
+  position: relative;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.loader__text {
+  font-size: 8rem;
+  font-family: 'Righteous', cursive;
+  font-weight: 500;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+.loader__text--1 {
+  -webkit-animation: fadeInText-1 0.8s ease;
+          animation: fadeInText-1 0.8s ease;
+  opacity: 0;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+}
+
+.loader__text--2 {
+  -webkit-animation: fadeInText-2 0.8s ease;
+          animation: fadeInText-2 0.8s ease;
+  -webkit-animation-delay: 4.8s;
+          animation-delay: 4.8s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+.loader__text--3 {
+  -webkit-animation: fadeInText-3 0.5s ease;
+          animation: fadeInText-3 0.5s ease;
+  -webkit-animation-delay: 5.6s;
+          animation-delay: 5.6s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+.loader--hidden {
+  display: none;
+}
+
+.loader--visible {
+  display: block;
+}
+
+.loader__gif {
+  height: 70px;
+  -webkit-transform: translateY(18rem);
+          transform: translateY(18rem);
+  -webkit-animation: loaderDisplay 0.1s;
+          animation: loaderDisplay 0.1s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-delay: 8s;
+          animation-delay: 8s;
 }
 
 .scheduler__container {
