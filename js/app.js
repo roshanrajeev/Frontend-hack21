@@ -16,7 +16,7 @@
       document.querySelector('.loader').style.display = 'none';
       document.body.style.overflowY = 'visible';
     }
-  }, 15000);
+  }, 100);
   // 15000
 })();
 
