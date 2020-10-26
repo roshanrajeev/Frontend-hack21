@@ -3,11 +3,19 @@
 
   &__text-box {
     position: absolute;
-    left: 60%;
+    left: 50%;
     top: 35%;
+    transform: translate(-50%, 0);
   }
 
   &__btn-box {
     display: flex;
+    justify-content: center;
+  }
+  .heading-primary{
+    text-align: center;
+    &--sub{
+      transform: translateX(-15px);
+    }
   }
 }
