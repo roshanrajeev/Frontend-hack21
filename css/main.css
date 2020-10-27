@@ -1076,10 +1076,10 @@ a {
 
 .about__bg {
   background: linear-gradient(90deg, #19864a 0%, #0a8240 100%);
-  padding: 15rem 0 25rem 0;
+  padding: 14rem 0 21rem 0;
   position: absolute;
   left: 0;
-  top: -18rem;
+  top: -15rem;
   width: 87%;
   font-weight: 300;
   font-size: 45vw;
@@ -1520,5 +1520,14 @@ a {
 
 .why-table table tr:nth-child(14) td:nth-child(4) {
   text-align: center;
+}
+
+.sponsors-prev {
+  margin-bottom: 20rem;
+}
+
+.sponsors-prev .sponsors__img {
+  height: 15rem;
+  margin-bottom: -1rem;
 }
 /*# sourceMappingURL=main.css.map */
