@@ -213,3 +213,70 @@
     }
   }
 }
+
+.sponsors-temp{
+  position: relative;
+  background: linear-gradient(90deg, #19864a 0%, #0a8240 100%);
+  padding: 10rem 0 5rem 0;
+}
+
+.why-table{
+  padding: 24rem 0;
+  .container{
+    display: flex;
+  }
+  .heading-secondary{
+    transform: rotateZ(-90deg);
+    span{
+      color: $color-red;
+    }
+  }
+  table{
+    background-color: black;
+    z-index:1;
+    // text-align: center;
+    margin: 0;
+    padding: 0;
+    border-collapse: collapse;
+    tr{
+      font-size: 1.4rem;
+      th{
+        padding: 1.5rem 1rem;
+        text-transform: uppercase;
+      }
+      td{
+        padding: .5rem 2rem;
+        img{
+          height: 2rem;
+        }
+      }
+    }
+    th,td,tr{
+      margin: 0;
+      padding: 0;
+    }
+    border: 2px solid white;
+    tr:nth-child(1){
+      border: 1px solid white;
+      th:nth-child(1){
+        border-right: 2px solid white;
+      }
+    }
+    @for $i from 2 through 14 {
+      tr:nth-child(#{$i}){
+        td:nth-child(1){
+          border-right: 2px solid white;
+        }
+      }
+    }
+    @for $i from 2 through 14 {
+      tr:nth-child(#{$i}){
+        @for $j from 2 through 4{
+          td:nth-child(#{$j}){
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}
