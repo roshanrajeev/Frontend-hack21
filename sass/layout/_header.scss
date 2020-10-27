@@ -20,8 +20,11 @@
   }
   .hero{
     &__logo{
-      height: 9rem;
+      height: 11rem;
       // #1bb35f
     }
+  }
+  .heading-primary--sub{
+    letter-spacing: 6px;
   }
 }

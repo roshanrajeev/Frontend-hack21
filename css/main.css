@@ -241,7 +241,7 @@ a {
 }
 
 .btn:not(:last-child) {
-  margin-right: 1rem;
+  margin-right: 3rem;
 }
 
 .btn--large {
@@ -249,7 +249,7 @@ a {
   text-transform: uppercase;
   letter-spacing: 4px;
   font-weight: 400;
-  width: 19.4rem;
+  width: 23.4rem;
   height: 6rem;
   border-radius: 4px;
   text-align: center;
@@ -1000,7 +1000,11 @@ a {
 }
 
 .header .hero__logo {
-  height: 9rem;
+  height: 11rem;
+}
+
+.header .heading-primary--sub {
+  letter-spacing: 6px;
 }
 
 .nav {
@@ -1197,6 +1201,8 @@ a {
   top: 50%;
   transform: translate(0, -50%);
   font-size: 2.4rem;
+  color: #1bb35f;
+  font-weight: 500;
 }
 
 .faq__solution {

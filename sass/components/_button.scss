@@ -2,7 +2,7 @@
   display: inline-block;
 
   &:not(:last-child) {
-    margin-right: 1rem;
+    margin-right: 3rem;
   }
   
   &--large {
@@ -11,7 +11,7 @@
     text-transform: uppercase;
     letter-spacing: 4px;
     font-weight: 400;
-    width: 19.4rem;
+    width: 23.4rem;
     //2.621
     height: 6rem;
     // border-radius: 8.4rem;
