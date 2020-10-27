@@ -6,7 +6,7 @@
   }
   
   &--large {
-    clip-path: polygon(8% 0, 100% 1%, 100% 78%, 91% 100%, 0 100%, 0 22%);
+    // clip-path: polygon(8% 0, 100% 1%, 100% 78%, 91% 100%, 0 100%, 0 22%);
     font-size: $default-font-size;
     text-transform: uppercase;
     letter-spacing: 4px;
@@ -19,6 +19,7 @@
     text-align: center;
     line-height: calc(6rem - 1px);
     vertical-align: center;
+    // background-color: $color-red;
   }
 
   &--red {
@@ -26,7 +27,9 @@
   }
 
   &--ring {
-    border: 1px solid $color-blue;
+    // background-color: $color-red;
+    border: 2px solid $color-blue;
+    position: relative;
   }
 
   // &--anim {

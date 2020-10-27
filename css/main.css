@@ -25,6 +25,10 @@ body::-webkit-scrollbar-thumb {
   border-radius: 100px;
 }
 
+.main-container {
+  background: url(../../img/lines.png);
+}
+
 body {
   font-family: 'Roboto Mono', monospace;
   font-weight: 400;
@@ -35,6 +39,10 @@ body {
 a {
   text-decoration: none;
   color: #fff;
+}
+
+.heading-primary {
+  text-transform: uppercase;
 }
 
 .heading-primary--main {
@@ -56,6 +64,7 @@ a {
 }
 
 .heading-secondary {
+  text-transform: uppercase;
   font-size: 6.4rem;
   color: #fff;
   font-weight: 600;
@@ -87,6 +96,7 @@ a {
 }
 
 .heading-tertiary {
+  text-transform: uppercase;
   font-size: 2rem;
   font-weight: 300;
 }
@@ -228,7 +238,6 @@ a {
 }
 
 .btn--large {
-  clip-path: polygon(8% 0, 100% 1%, 100% 78%, 91% 100%, 0 100%, 0 22%);
   font-size: 1.6rem;
   text-transform: uppercase;
   letter-spacing: 4px;
@@ -246,7 +255,8 @@ a {
 }
 
 .btn--ring {
-  border: 1px solid #1bb35f;
+  border: 2px solid #1bb35f;
+  position: relative;
 }
 
 .img-grid__container {
@@ -1053,20 +1063,28 @@ a {
   margin-bottom: 25rem;
 }
 
+.about .col-sm-7 {
+  z-index: 1;
+}
+
 .about__bg {
+  background: linear-gradient(90deg, #18112e 0, #321635 100%);
+  padding: 15rem 0 25rem 0;
   position: absolute;
   left: 0;
-  top: 0;
-  width: 100%;
+  top: -18rem;
+  width: 87%;
   font-weight: 300;
-  font-size: 50vw;
+  font-size: 45vw;
   color: #111111;
   line-height: 0.3;
-  z-index: -1;
+  z-index: 0;
 }
 
 .speakers {
   margin-bottom: 25rem;
+  width: 100%;
+  padding: 8rem 0 10rem 0;
 }
 
 .schedule {

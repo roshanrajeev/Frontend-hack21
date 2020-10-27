@@ -5,22 +5,32 @@
 .about {
   position: relative;
   margin-bottom: 25rem;
-
+  .col-sm-7{
+    z-index: 1;
+  }
   &__bg {
+    // background-color: #38023B;
+    // background-color: #071013;
+    background: linear-gradient(90deg,#18112e 0,#321635 100%);
+    padding: 15rem 0 25rem 0;
     position: absolute;
     left: 0;
-    top: 0;
-    width: 100%;
-    font-weight: 300  ;
-    font-size: 50vw;
+    top: -18rem;
+    width: 87%;
+    font-weight: 300 ;
+    font-size: 45vw;
     color: $color-grey-dark-text;
     line-height: 0.3;
-    z-index: -1;
+    z-index: 0;
   }
 }
 
 .speakers {
   margin-bottom: 25rem;
+  // background-color: #090025 ;
+  width: 100%;
+  // margin-left: 20%;
+  padding: 8rem 0 10rem 0;
 }
 
 .schedule {
