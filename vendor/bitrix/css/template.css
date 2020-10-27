@@ -1,0 +1,204 @@
+
+
+/* Start:/local/templates/neurohive/assets/css/main.min.css?1529687326146817*/
+
+@font-face {
+    font-family: Clarke;
+    src: url(/local/templates/neurohive/assets/css/../fonts/clarke/Clarke.woff2) format("woff2"), url(/local/templates/neurohive/assets/css/../fonts/clarke/Clarke.woff) format("woff");
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: Geometria;
+    src: url(/local/templates/neurohive/assets/css/../fonts/geometria/Geometria-Bold.woff2) format("woff2"), url(/local/templates/neurohive/assets/css/../fonts/geometria/Geometria-Bold.woff) format("woff");
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: Mont;
+    src: url(/local/templates/neurohive/assets/css/../fonts/mont/Mont-Bold.woff2) format("woff2"), url(/local/templates/neurohive/assets/css/../fonts/mont/Mont-Bold.woff) format("woff");
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: Muller;
+    src: url(/local/templates/neurohive/assets/css/../fonts/muller/MullerLight.woff2) format("woff2"), url(/local/templates/neurohive/assets/css/../fonts/muller/MullerLight.woff) format("woff");
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: Muller;
+    src: url(/local/templates/neurohive/assets/css/../fonts/muller/MullerRegular.woff2) format("woff2"), url(/local/templates/neurohive/assets/css/../fonts/muller/MullerRegular.woff) format("woff");
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: Muller;
+    src: url(/local/templates/neurohive/assets/css/../fonts/muller/MullerMedium.woff2) format("woff2"), url(/local/templates/neurohive/assets/css/../fonts/muller/MullerMedium.woff) format("woff");
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: Muller;
+    src: url(/local/templates/neurohive/assets/css/../fonts/muller/MullerBold.woff2) format("woff2"), url(/local/templates/neurohive/assets/css/../fonts/muller/MullerBold.woff) format("woff");
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Osnova Pro';
+    src: url(/local/templates/neurohive/assets/css/../fonts/osnova/OsnovaPro-Regular.woff2) format("woff2"), url(/local/templates/neurohive/assets/css/../fonts/osnova/OsnovaPro-Regular.woff) format("woff");
+    font-weight: 400;
+    font-style: normal;
+}
+body {
+    font-size: 1.125rem;
+    /* color: #b0aeda; */
+    font-family: Muller, sans-serif;
+    font-weight: 400;
+    position: relative;
+    opacity: 1;
+    /* background: -webkit-gradient(linear, left top, right top, from(#090025), to(#2f0028));
+    background: -o-linear-gradient(left, #090025 0, #2f0028 100%);
+	background: linear-gradient(to right, #090025 0, #2f0028 100%); */
+	background: #000;
+}
+body::-webkit-scrollbar {
+    width: 2px;
+    height: 4px;
+}
+body::-webkit-scrollbar-thumb {
+    /* background-color: #b836c6; */
+    border-radius: 100px;
+}
+.relative {
+    position: relative;
+}
+.text-center {
+    text-align: center;
+}
+.rimg {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.bg-mask {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background: -webkit-gradient(linear, left top, right top, from(#090025), to(#2f0028));
+    background: -o-linear-gradient(left, #090025 0, #2f0028 100%);
+    background: linear-gradient(to right, #090025 0, #2f0028 100%); */
+    -webkit-transition: 1s ease-in-out;
+    -o-transition: 1s ease-in-out;
+    transition: 1s ease-in-out;
+    pointer-events: none;
+    opacity: 0;
+}
+.bg-mask.is-visible {
+    opacity: .5;
+}
+#webgl-output {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    pointer-events: none;
+}
+#webgl-output canvas {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+#webgl-output.is-active {
+    z-index: 8;
+}
+#webgl-output.is-active::before {
+    opacity: 1;
+}
+#webgl-output::before {
+    position: fixed;
+    content: '';
+    top: 0;
+    width: 100%;
+    height: 100%;
+    /* background: -webkit-gradient(linear, left top, right top, from(#090025), to(#2f0028));
+    background: -o-linear-gradient(left, #090025 0, #2f0028 100%);
+    background: linear-gradient(to right, #090025 0, #2f0028 100%); */
+    z-index: -1;
+    opacity: 0;
+    -webkit-transition: .2s ease-in-out;
+    -o-transition: .2s ease-in-out;
+    transition: .2s ease-in-out;
+}
+/* #7aaac167f */
+.fluid--center {
+    width: 100%;
+    min-height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+.fluid--px {
+    min-height: 700px;
+}
+.fluid--news {
+    margin-bottom: 5em;
+}
+
+@-webkit-keyframes fadeDown {
+    0% {
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+    opacity: 0;
+}
+100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+}
+}@keyframes fadeDown {
+    0% {
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+    opacity: 0;
+}
+100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+}
+}@-webkit-keyframes fadeUp {
+    0% {
+    -webkit-transform: translateY(10vh);
+    transform: translateY(10vh);
+    opacity: 0;
+}
+100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+}
+}@keyframes fadeUp {
+    0% {
+    -webkit-transform: translateY(10vh);
+    transform: translateY(10vh);
+    opacity: 0;
+}
+100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+}
+}
+/* End */
+/* /local/templates/neurohive/assets/css/main.min.css?1529687326146817 */
+/* /local/templates/neurohive/styles.css?15657097382021 */

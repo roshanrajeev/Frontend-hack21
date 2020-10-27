@@ -3,8 +3,24 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--  -->
+    <meta charset="windows-1251">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:700&amp;subset=cyrillic" rel="stylesheet">
+  <!--  -->
+
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">  <link rel="stylesheet" href="css/main.css">
+  <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">  
+ 
+  <!-- bitrix css -->
+  <link rel="stylesheet" href="./vendor/bitrix/css/page.css">
+  <link rel="stylesheet" href="./vendor/bitrix/css/template.css">
+
+  <!-- custom css -->
+  <link rel="stylesheet" href="css/main.css">
+
+  <!-- fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -14,460 +30,443 @@
   <title>Hack | Home</title>
 </head>
 <body>
-  <div class="loader u-not-select">
+  <!-- animation start -->
+  <style>.hud-timer{display: none}</style>
+  <div class="preloader">
+      <!-- <div class="preloader-ring"></div> -->
+  </div>
+
+  <!-- three.js -->
+  <div id="webgl-output"></div>
+  <div class="bg-mask"></div>
+  <div id="sections">
+      <nav id="nav" class="nav">
+        <div class="nav__logo-box">
+          <a href="#" class="nav__logo-link">
+            <img src="img/Logo-techie.png" alt="logo" class="nav__logo">
+          </a>
+        </div>
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#about">About</a></li>
+          <li class="nav__item"><a href="#speakers">Speakers</a></li>
+          <li class="nav__item"><a href="#schedule">Schedule</a></li>
+          <li class="nav__item"><a href="#rewind">After Video</a></li>
+          <li class="nav__item"><a href="#testimonial">Testimonials</a></li>
+          <li class="nav__item nav__item--reg"><a href="#">Register</a></li>
+        </ul>
+      </nav>
+    
+      <header class="header u-not-select">
+        <div class="header__text-box">
+          <h1 class="heading-primary u-margin-bottom-medium">
+            <!-- <span class="heading-primary--main">.hack( );</span> -->
+            <span class="heading-primary--main"><img src="./img/hero_heading.png" class="hero__logo"/></span>
+            <span class="heading-primary--sub"> 
+              <span class="heading-primary--sub-large">2021 | </span>
+              February 1st & 2nd
+            </span>
+          </h1>
+          <div class="header__btn-box">
+            <!-- Bubble button -->
+            <a href="#" class="btn btn--large btn--ring">Login</a>
+            <a href="#" class="btn btn--large btn--ring btn--anim">Register</a>
+          </div>
+        </div>
+      </header>
+      
+      <main>
+        <section id="about" class="about">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-7">
+                <h2 class="heading-secondary u-margin-bottom-medium about__heading-animated">
+                  <span>Challenge.</span> 
+                  <span class="heading-secondary--pink">Revolutionize.</span>
+                </h2>
+                <p class="paragraph">Cupcake ipsum dolor sit. Amet candy canes biscuit chocolate bar sweet donut macaroon. 
+                  Chupa chups caramels candy jelly beans candy pie  cookie. Tiramisu jelly beans sesame 
+                  snaps jelly-o topping tiramisu apple pie bear claw.</p>
+              </div>
+            </div>
+          </div>
+          <div class="about__bg">
+            2021
+          </div>
+        </section>
+    
+        <section id="speakers" class="speakers">
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-sm-12">
+                <h2 class="heading-secondary u-margin-bottom-large u-text-align-right">
+                  <span class="heading-secondary--main">Meet the speakers</span>
+                  <span class="heading-secondary--sub"># These are the first confirmed speakers for hack21</span>
+                </h2>
+              </div>
+            </div>
+    
+            <div class="img-grid">
+              <div class="row">
+                <div class="col-sm-4">
+                  <div class="img-grid__container img-grid__container--left">
+                    <img src="img/speakers.jpg" class="img-grid__image">
+                    <h3 class="img-grid__text img-grid__text-1">
+                      <span class="img-grid__text--main">Coming Soon</span>
+                      <span class="img-grid__text--sub">Coming Soon</span>
+                    </h3>
+                  </div>
+                </div>
+                <div class="col-sm-4">
+                  <div class="img-grid__container img-grid__container--center">
+                    <img src="img/speakers.jpg" alt="" class="img-grid__image">
+                    <h3 class="img-grid__text img-grid__text-2">
+                      <span class="img-grid__text--main">Coming Soon</span>
+                      <span  class="img-grid__text--sub">Coming Soon</span>
+                    </h3>
+                  </div>
+                </div>
+                <div class="col-sm-4">
+                  <div class="img-grid__container img-grid__container--right">
+                    <img src="img/speakers.jpg" alt="" class="img-grid__image">
+                    <h3 class="img-grid__text img-grid__text-3">
+                      <span class="img-grid__text--main">Coming Soon</span>
+                      <span class="img-grid__text--sub">Coming Soon</span>
+                    </h3>
+                  </div>
+                </div>
+              </div>
+              </div>
+          </div>
+        </section>
+    
+        <section id="schedule" class="schedule">
+          <div class="container">
+            <div class="row u-margin-bottom-large">
+              <div class="col-12">
+                <h2 class="heading-secondary">Schedule</h2>
+              </div>
+            </div>
+    
+            <div class="row">
+              <div class="col-6">
+                <h3 class="heading-tertiary u-margin-bottom-medium"># 01 Feb 21 &nbsp;&nbsp;|&nbsp;&nbsp; Day 1</h3>
+                <div class="scheduler">
+                  <div class="scheduler__container">
+                    <h4 class="scheduler__heading">Talk</h4>
+                    <p class="scheduler__body">
+                      <span class="scheduler__body--main">Sundar Pichai, CEO Google</span>
+                      <span class="scheduler__body--time">9.00 to 9.45</span>
+                    </p>
+                  </div>
+    
+                  <div class="scheduler__container">
+                    <h4 class="scheduler__heading">Talk</h4>
+                    <p class="scheduler__body">
+                      <span class="scheduler__body--main">Sundar Pichai, CEO Google</span>
+                      <span class="scheduler__body--time">9.00 to 9.45</span>
+                    </p>
+                  </div>
+    
+                  <div class="scheduler__container">
+                    <h4 class="scheduler__heading">Talk</h4>
+                    <p class="scheduler__body">
+                      <span class="scheduler__body--main">Sundar Pichai, CEO Google</span>
+                      <span class="scheduler__body--time">9.00 to 9.45</span>
+                    </p>
+                  </div>
+    
+                  <div class="scheduler__container">
+                    <h4 class="scheduler__heading">Talk</h4>
+                    <p class="scheduler__body">
+                      <span class="scheduler__body--main">Sundar Pichai, CEO Google</span>
+                      <span class="scheduler__body--time">9.00 to 9.45</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+    
+    
+              <div class="col-6">
+                <h3 class="heading-tertiary u-margin-bottom-medium"># 02 Feb 21 &nbsp;&nbsp;|&nbsp;&nbsp; Day 2</h3>
+                <div class="scheduler">
+                  <div class="scheduler__container">
+                    <h4 class="scheduler__heading">Talk</h4>
+                    <p class="scheduler__body">
+                      <span class="scheduler__body--main">Sundar Pichai, CEO Google</span>
+                      <span class="scheduler__body--time">9.00 to 9.45</span>
+                    </p>
+                  </div>
+    
+                  <div class="scheduler__container">
+                    <h4 class="scheduler__heading">Talk</h4>
+                    <p class="scheduler__body">
+                      <span class="scheduler__body--main">Sundar Pichai, CEO Google</span>
+                      <span class="scheduler__body--time">9.00 to 9.45</span>
+                    </p>
+                  </div>
+    
+                  <div class="scheduler__container">
+                    <h4 class="scheduler__heading">Talk</h4>
+                    <p class="scheduler__body">
+                      <span class="scheduler__body--main">Sundar Pichai, CEO Google</span>
+                      <span class="scheduler__body--time">9.00 to 9.45</span>
+                    </p>
+                  </div>
+                  
+                  <div class="scheduler__container">
+                    <h4 class="scheduler__heading">Talk</h4>
+                    <p class="scheduler__body">
+                      <span class="scheduler__body--main">Sundar Pichai, CEO Google</span>
+                      <span class="scheduler__body--time">9.00 to 9.45</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+    
+        <section id="rewind" class="rewind">
+          <div class="container">
+            <div class="row">
+              <div class="col-6">
+                <div class="rewind__text-container">
+                  <h2 class="heading-secondary u-margin-bottom-medium">Rewind hack 20</h2>
+                  <p class="paragraph">Lorem Ipsum is simply dummy text of the printing and typesetting 
+                    industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                     when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+                     It has survived not only five centuries.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="rewind__video-container">
+            <video class="rewind__video" autoplay muted loop>
+              <source src="video/hackAfterMovie.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </section>
+    
+        <section id="testimonial" class="testimonial">
+          <div class="container">
+            <div class="row">
+              <div class="col-6">
+                <div class="testimonial__container">
+                  <p class="testimonial__quote">“.hack(); was my first ever hackathon and it helped me get to know many students from different colleges and universities who had some really astonishing ideas. It helped me learn something and realise that I had to develop my skills and that's  my biggest take away from
+                    .hack().
+                    ”</p>
+                  <div class="testimonial__img-container">
+                    <img src="img/quotes.svg" alt="" class="testimonial__img">
+                  </div>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="testimonial__container">
+                  <p class="testimonial__quote">“I had participated in multiple other hackathons before, and .hack(); was special because my team won 2nd prize. There were a few talks to inspire us at the beginning of the hackathon. All the  teams were very competitive and had high standards. The event was well organized, and the volunteers kept us active throughout the whole event. ”</p>
+                  <div class="testimonial__img-container">
+                    <img src="img/quotes.svg" alt="" class="testimonial__img">
+                  </div>
+                </div>
+              </div>
+            </div>
+    
+            <div class="row">
+              <div class="col-6">
+                <div class="testimonial__container">
+                  <p class="testimonial__quote">“Before this, I had a common misconception that a hackathon only involves coding for an entire day. In actual fact, not all hackathons are about coding, as the main aim of a hackathon is problem solving. .hack(); really helped me learn new technologies and meet new people. We experimented with many new concepts and achieved the second prize! 
+                    ”</p>
+                  <div class="testimonial__img-container">
+                    <img src="img/quotes.svg" alt="" class="testimonial__img">
+                  </div>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="testimonial__container">
+                  <p class="testimonial__quote">“My team and I had a lot of fun developing our prototype and it was a wonderful opportunity to learn and improve our knowledge. The program was well planned and properly executed, which is something MACE SB can be proud of considering that it is definitely not an easy task to pull off an event at this scale. The event not only allowed us to bond as a team but also network with a lot of other students from various parts of kerala.
+                    ”</p>
+                  <div class="testimonial__img-container">
+                    <img src="img/quotes.svg" alt="" class="testimonial__img">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+    
+        <section id="faq" class="faq">
+          <div class="container">
+            <div class="heading-secondary u-margin-bottom-large">
+              <span>Frequently Asked</span>
+              <span>Questions</span>
+            </div>
+    
+            <div class="row">
+              <div class="col-12">
+                <div class="faq__container">
+                  <div class="faq__question">
+                    When will the event start?
+                    <span>+</span>
+                  </div>
+                  <div class="faq__solution hidden">
+                    Before human extinction.
+                  </div>
+                </div>
+                <div class="faq__container">
+                  <div class="faq__question">
+                    Who the hell is organising it 
+                    <span>+</span>
+                  </div>
+                  <div class="faq__solution hidden">
+                    Before human extinction.
+                  </div>
+                </div>
+                <div class="faq__container">
+                  <div class="faq__question">
+                    What the fuck are you doing over there?
+                    <span>+</span>
+                  </div>
+                  <div class="faq__solution hidden">
+                    Before human extinction.
+                  </div>
+                </div>
+                <div class="faq__container">
+                  <div class="faq__question">
+                    Why  are you chosing the shitty places for hackathons?
+                    <span>+</span>
+                  </div>
+                  <div class="faq__solution hidden">
+                    Before human extinction.
+                  </div>
+                </div>
+                <div class="faq__container">
+                  <div class="faq__question">
+                    Will ya for god sake stop doing theis shit!
+                    <span>+</span>
+                  </div>
+                  <div class="faq__solution hidden">
+                      Before human extinction.
+                  </div>
+                </div>
+                <div class="faq__container">
+                  <div class="faq__question">
+                    Ha Ha! Just Kidding...
+                    <span>+</span>
+                  </div>
+                  <div class="faq__solution hidden">
+                      Before human extinction.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+    
+        <section id="sponsors" class="sponsors">
+          <div class="container">
+            <div class="sponsors__container sponsors__container--head">
+              <div class="row">
+                <img class="sponsors__img" src="img/sponsors/ieee.svg" alt="">
+              </div>
+            </div>
+    
+            <div class="sponsors__container sponsors__container--main">
+              <h5 class="sponsors__heading">MAIN SPONSORS</h5>
+              <div class="row">
+                <img class="sponsors__img" src="img/sponsors/Pinmicro.svg" alt="">
+                <img class="sponsors__img" src="img/sponsors/Tenor Hut.svg" alt="">
+              </div>
+            </div>
+    
+            <div class="sponsors__container sponsors__container--student-partners">
+              <h5 class="sponsors__heading">STUDENT PARTNERS</h5>
+              <div class="row">
+                <img class="sponsors__img" src="img/sponsors/msp.svg" alt="">
+                <img class="sponsors__img" src="img/sponsors/msp2.svg" alt="">
+              </div>
+            </div>
+    
+            <div class="sponsors__container sponsors__container--community-partners">
+              <h5 class="sponsors__heading">COMMUNITY PARTNERS</h5>
+              <div class="row">
+                <img class="sponsors__img" src="img/sponsors/github.svg" alt="">
+                <img class="sponsors__img" src="img/sponsors/gatsby.svg" alt="">
+                <img class="sponsors__img" src="img/sponsors/kutty coders.svg" alt="">
+              </div>
+              <div class="row">
+                <img class="sponsors__img" src="img/sponsors/devfolio.svg" alt="">
+                <img class="sponsors__img" src="img/sponsors/matic.svg" alt="">
+              </div>
+              <div class="row">
+                <img class="sponsors__img" src="img/sponsors/wolfram.svg" alt="">
+              </div>
+            </div>
+    
+            <div class="sponsors__container sponsors__container--media-partners">
+              <h5 class="sponsors__heading">MEDIA PARTNERS</h5>
+              <div class="row">
+                <img class="sponsors__img" src="img/sponsors/safeonnet.svg" alt="">
+              </div>
+            </div>
+    
+          </div>
+        </section>
+      </main>
+    
+      <footer class="footer">
+        <div class="footer__icons">
+          <a href="#"><img src="img/icons/youtube.svg" alt=""></a>
+          <a href="#"><img src="img/icons/insta.svg" alt=""></a>
+          <a href="#"><img src="img/icons/facebook.svg" alt=""></a>
+          <a href="#"><img src="img/icons/twitter.svg" alt=""></a>
+        </div>
+        <p>
+          <span>Made in assosciation with macehub</span>
+          <span>© All rights reserved - .hack ( );  2021</span>
+        </p>
+      </footer>
+  </div>
+  <!-- animation end -->
+
+  <!-- <div class="loader u-not-select">
     <div class="loader__container">
       <p class="loader__text loader__text--1">Welcome</p>
       <p class="loader__text loader__text--2">To</p>
       <p class="loader__text loader__text--3">.hack(&nbsp;);</p>
-      <!-- <img class="loader__gif" src="img/loader.gif" alt=""> -->
       <div class="loader__icon">
         <svg class="spinner" width="65px" height="65px" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
           <circle class="path" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33" r="30"></circle>
        </svg>
       </div>
     </div>
-  </div>
-  <nav id="nav" class="nav">
-    <div class="nav__logo-box">
-      <a href="#" class="nav__logo-link">
-        <img src="img/Logo-techie.png" alt="logo" class="nav__logo">
-      </a>
-    </div>
-    <ul class="nav__list">
-      <li class="nav__item"><a href="#about">About</a></li>
-      <li class="nav__item"><a href="#speakers">Speakers</a></li>
-      <li class="nav__item"><a href="#schedule">Schedule</a></li>
-      <li class="nav__item"><a href="#rewind">After Video</a></li>
-      <li class="nav__item"><a href="#testimonial">Testimonials</a></li>
-      <li class="nav__item nav__item--reg"><a href="#">Register</a></li>
-    </ul>
-  </nav>
-
-  <header class="header u-not-select">
-    <!-- <div class="shapes">
-      <svg style="overflow: visible;" width="410" height="466" viewBox="0 0 410 466" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <g id="shapes">
-          <g id="fast">
-            <path id="Vector 18" d="M151.5 278H135.5V354.5H151.5V278Z" fill="#FF9169"/>
-            <path id="Vector 11" d="M364 355H349V431L364 412V355Z" fill="#C30000"/>
-            <path id="rt" d="M89.5 19.5V0L74 19.5H89.5Z" fill="#C30000"/>
-            <path id="Vector 5" d="M366.5 5H351V111H366.5V5Z" fill="white"/>
-            <path id="Vector" d="M310.5 20C314.642 20 318 16.6421 318 12.5C318 8.35786 314.642 5 310.5 5C306.358 5 303 8.35786 303 12.5C303 16.6421 306.358 20 310.5 20Z" fill="white"/>
-            <path id="Vector_2" d="M333.5 279C342.06 279 349 272.06 349 263.5C349 254.94 342.06 248 333.5 248C324.94 248 318 254.94 318 263.5C318 272.06 324.94 279 333.5 279Z" fill="#C30000"/>
-            <path id="Vector_3" d="M333.5 340C342.06 340 349 333.06 349 324.5C349 315.94 342.06 309 333.5 309C324.94 309 318 315.94 318 324.5C318 333.06 324.94 340 333.5 340Z" fill="white"/>
-            <path id="Vector 10" d="M333.5 355H318.5V400H333.5V355Z" fill="#FF9169"/>
-          </g>
-          <g id="slow">
-            <path id="Vector 17" d="M163.5 323.5H147.5L84.5 399.5H100L163.5 323.5Z" fill="#C30000"/>
-            <path id="irregular" d="M151 96.5L150.5 19.5H227.5L151 110.5V141H135V96.5H151Z" fill="#C30000"/>
-            <path id="Vector 2" d="M242 111V57L196.5 111H242Z" fill="#C30000"/>
-            <path id="Vector 3" d="M321.5 50.5H306L178 203H193.5L321.5 50.5Z" fill="white"/>
-            <path id="Vector 4" d="M352 50.5H336.5L209.5 202H225L352 50.5Z" fill="#C30000"/>
-            <path id="Vector 1" d="M242.5 38.5V20.5L166.5 111H181.5L242.5 38.5Z" fill="#C30000"/>
-            <path id="Vector 9" d="M409.5 80.5L395 65L394.5 294H409.5V80.5Z" fill="#C30000"/>
-            <path id="Vector 14" d="M167 278.5H152L50 399H66L167 278.5Z" fill="white"/>
-          </g>
-          <g id="medium">
-            <path id="Vector 16" d="M89 465H14V400H89V465Z" fill="#C30000"/>
-            <path id="rct" d="M59.5 96.5V65H151V96.5H59.5Z" fill="#FF9169"/>
-            <path id="Vector 7" d="M227.5 277L303.5 202V277H227.5Z" fill="#C30000"/>
-            <path id="Vector 8" d="M225 355L303 278V355H225Z" fill="white"/>
-            <path id="Vector 13" d="M75 278V202L0 278H75Z" fill="#C30000"/>
-            <path id="Subtract" fill-rule="evenodd" clip-rule="evenodd" d="M89 400H14V446H30.5707C32.8346 436.259 41.5696 429 52 429C62.4304 429 71.1654 436.259 73.4293 446H89V400Z" fill="white"/>
-            <path id="Vector 19" d="M151 416.5V354.5H166.5V323.5H181.5V354.5H226.5V466H200.5L151 416.5Z" fill="#C30000"/>
-            <g id="Group 4">
-              <mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="58" y="170" width="64" height="32">
-                <rect id="Rectangle 46" x="58" y="170" width="64" height="32" fill="#C4C4C4"/>
-              </mask>
-              <g mask="url(#mask0)">
-                <path id="Vector_4" d="M122 202C122 243.27 58 243.27 58 202C58 184.327 72.3269 170 90 170C107.673 170 122 184.327 122 202Z" fill="white"/>
-              </g>
-            </g>
-            <g id="Group 5">
-              <mask id="mask1" mask-type="alpha" maskUnits="userSpaceOnUse" x="182" y="203" width="60" height="30">
-                <rect id="Rectangle 46_2" x="242" y="233" width="60" height="30" transform="rotate(180 242 233)" fill="#C4C4C4"/>
-              </mask>
-              <g mask="url(#mask1)">
-                <path id="Vector_5" d="M182 203C182 164.309 242 164.309 242 203C242 219.569 228.569 233 212 233C195.431 233 182 219.569 182 203Z" fill="#C30000"/>
-              </g>
-            </g>
-          </g>
-        </g>
-      </svg>
-    </div> -->
-
-    <div class="header__text-box">
-      <h1 class="heading-primary u-margin-bottom-medium">
-        <!-- <span class="heading-primary--main">.hack( );</span> -->
-        <span class="heading-primary--main"><img src="./img/hero-glitched.gif" class="hero__logo"/></span>
-        <span class="heading-primary--sub">&nbsp;&nbsp;February 1st & 2nd 
-          <span class="heading-primary--sub-large">| 2021</span>
-        </span>
-      </h1>
-      <div class="header__btn-box">
-        <!-- Bubble button -->
-        <a href="#" class="btn btn--large btn--red">Login</a>
-        <a href="#" class="btn btn--large btn--ring btn--anim">Register</a>
-      </div>
-    </div>
-  </header>
+  </div> -->
   
-  <main>
-    <section id="about" class="about">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-7">
-            <h2 class="heading-secondary u-margin-bottom-medium about__heading-animated">
-              <span>Challenge.</span> 
-              <span class="heading-secondary--pink">Revolutionize.</span>
-            </h2>
-            <p class="paragraph">Cupcake ipsum dolor sit. Amet candy canes biscuit chocolate bar sweet donut macaroon. 
-              Chupa chups caramels candy jelly beans candy pie  cookie. Tiramisu jelly beans sesame 
-              snaps jelly-o topping tiramisu apple pie bear claw.</p>
-          </div>
-        </div>
-      </div>
-      <div class="about__bg">
-        2021
-      </div>
-    </section>
-
-    <section id="speakers" class="speakers">
-      <div class="container">
-        <div class="row">
-          <div class="col-12 col-sm-12">
-            <h2 class="heading-secondary u-margin-bottom-large u-text-align-right">
-              <span class="heading-secondary--main">Meet the speakers</span>
-              <span class="heading-secondary--sub"># These are the first confirmed speakers for hack21</span>
-            </h2>
-          </div>
-        </div>
-
-        <div class="img-grid">
-          <div class="row">
-            <div class="col-sm-4">
-              <div class="img-grid__container img-grid__container--left">
-                <img src="img/speakers.jpg" class="img-grid__image">
-                <h3 class="img-grid__text img-grid__text-1">
-                  <span class="img-grid__text--main">Coming Soon</span>
-                  <span class="img-grid__text--sub">Coming Soon</span>
-                </h3>
-              </div>
-            </div>
-            <div class="col-sm-4">
-              <div class="img-grid__container img-grid__container--center">
-                <img src="img/speakers.jpg" alt="" class="img-grid__image">
-                <h3 class="img-grid__text img-grid__text-2">
-                  <span class="img-grid__text--main">Coming Soon</span>
-                  <span  class="img-grid__text--sub">Coming Soon</span>
-                </h3>
-              </div>
-            </div>
-            <div class="col-sm-4">
-              <div class="img-grid__container img-grid__container--right">
-                <img src="img/speakers.jpg" alt="" class="img-grid__image">
-                <h3 class="img-grid__text img-grid__text-3">
-                  <span class="img-grid__text--main">Coming Soon</span>
-                  <span class="img-grid__text--sub">Coming Soon</span>
-                </h3>
-              </div>
-            </div>
-          </div>
-          </div>
-      </div>
-    </section>
-
-    <section id="schedule" class="schedule">
-      <div class="container">
-        <div class="row u-margin-bottom-large">
-          <div class="col-12">
-            <h2 class="heading-secondary">Schedule</h2>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-6">
-            <h3 class="heading-tertiary u-margin-bottom-medium"># 01 Feb 21 &nbsp;&nbsp;|&nbsp;&nbsp; Day 1</h3>
-            <div class="scheduler">
-              <div class="scheduler__container">
-                <h4 class="scheduler__heading">Talk</h4>
-                <p class="scheduler__body">
-                  <span class="scheduler__body--main">Sundar Pichai, CEO Google</span>
-                  <span class="scheduler__body--time">9.00 to 9.45</span>
-                </p>
-              </div>
-
-              <div class="scheduler__container">
-                <h4 class="scheduler__heading">Talk</h4>
-                <p class="scheduler__body">
-                  <span class="scheduler__body--main">Sundar Pichai, CEO Google</span>
-                  <span class="scheduler__body--time">9.00 to 9.45</span>
-                </p>
-              </div>
-
-              <div class="scheduler__container">
-                <h4 class="scheduler__heading">Talk</h4>
-                <p class="scheduler__body">
-                  <span class="scheduler__body--main">Sundar Pichai, CEO Google</span>
-                  <span class="scheduler__body--time">9.00 to 9.45</span>
-                </p>
-              </div>
-
-              <div class="scheduler__container">
-                <h4 class="scheduler__heading">Talk</h4>
-                <p class="scheduler__body">
-                  <span class="scheduler__body--main">Sundar Pichai, CEO Google</span>
-                  <span class="scheduler__body--time">9.00 to 9.45</span>
-                </p>
-              </div>
-            </div>
-          </div>
-
-
-          <div class="col-6">
-            <h3 class="heading-tertiary u-margin-bottom-medium"># 02 Feb 21 &nbsp;&nbsp;|&nbsp;&nbsp; Day 2</h3>
-            <div class="scheduler">
-              <div class="scheduler__container">
-                <h4 class="scheduler__heading">Talk</h4>
-                <p class="scheduler__body">
-                  <span class="scheduler__body--main">Sundar Pichai, CEO Google</span>
-                  <span class="scheduler__body--time">9.00 to 9.45</span>
-                </p>
-              </div>
-
-              <div class="scheduler__container">
-                <h4 class="scheduler__heading">Talk</h4>
-                <p class="scheduler__body">
-                  <span class="scheduler__body--main">Sundar Pichai, CEO Google</span>
-                  <span class="scheduler__body--time">9.00 to 9.45</span>
-                </p>
-              </div>
-
-              <div class="scheduler__container">
-                <h4 class="scheduler__heading">Talk</h4>
-                <p class="scheduler__body">
-                  <span class="scheduler__body--main">Sundar Pichai, CEO Google</span>
-                  <span class="scheduler__body--time">9.00 to 9.45</span>
-                </p>
-              </div>
-              
-              <div class="scheduler__container">
-                <h4 class="scheduler__heading">Talk</h4>
-                <p class="scheduler__body">
-                  <span class="scheduler__body--main">Sundar Pichai, CEO Google</span>
-                  <span class="scheduler__body--time">9.00 to 9.45</span>
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="rewind" class="rewind">
-      <div class="container">
-        <div class="row">
-          <div class="col-6">
-            <div class="rewind__text-container">
-              <h2 class="heading-secondary u-margin-bottom-medium">Rewind hack 20</h2>
-              <p class="paragraph">Lorem Ipsum is simply dummy text of the printing and typesetting 
-                industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                 when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
-                 It has survived not only five centuries.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="rewind__video-container">
-        <video class="rewind__video" autoplay muted loop>
-          <source src="video/hackAfterMovie.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-      </div>
-    </section>
-
-    <section id="testimonial" class="testimonial">
-      <div class="container">
-        <div class="row">
-          <div class="col-6">
-            <div class="testimonial__container">
-              <p class="testimonial__quote">“.hack(); was my first ever hackathon and it helped me get to know many students from different colleges and universities who had some really astonishing ideas. It helped me learn something and realise that I had to develop my skills and that's  my biggest take away from
-                .hack().
-                ”</p>
-              <div class="testimonial__img-container">
-                <img src="img/quotes.svg" alt="" class="testimonial__img">
-              </div>
-            </div>
-          </div>
-          <div class="col-6">
-            <div class="testimonial__container">
-              <p class="testimonial__quote">“I had participated in multiple other hackathons before, and .hack(); was special because my team won 2nd prize. There were a few talks to inspire us at the beginning of the hackathon. All the  teams were very competitive and had high standards. The event was well organized, and the volunteers kept us active throughout the whole event. ”</p>
-              <div class="testimonial__img-container">
-                <img src="img/quotes.svg" alt="" class="testimonial__img">
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-6">
-            <div class="testimonial__container">
-              <p class="testimonial__quote">“Before this, I had a common misconception that a hackathon only involves coding for an entire day. In actual fact, not all hackathons are about coding, as the main aim of a hackathon is problem solving. .hack(); really helped me learn new technologies and meet new people. We experimented with many new concepts and achieved the second prize! 
-                ”</p>
-              <div class="testimonial__img-container">
-                <img src="img/quotes.svg" alt="" class="testimonial__img">
-              </div>
-            </div>
-          </div>
-          <div class="col-6">
-            <div class="testimonial__container">
-              <p class="testimonial__quote">“My team and I had a lot of fun developing our prototype and it was a wonderful opportunity to learn and improve our knowledge. The program was well planned and properly executed, which is something MACE SB can be proud of considering that it is definitely not an easy task to pull off an event at this scale. The event not only allowed us to bond as a team but also network with a lot of other students from various parts of kerala.
-                ”</p>
-              <div class="testimonial__img-container">
-                <img src="img/quotes.svg" alt="" class="testimonial__img">
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="faq" class="faq">
-      <div class="container">
-        <div class="heading-secondary u-margin-bottom-large">
-          <span>Frequently Asked</span>
-          <span>Questions</span>
-        </div>
-
-        <div class="row">
-          <div class="col-12">
-            <div class="faq__container">
-              <div class="faq__question">
-                When will the event start?
-                <span>+</span>
-              </div>
-              <div class="faq__solution hidden">
-                Before human extinction.
-              </div>
-            </div>
-            <div class="faq__container">
-              <div class="faq__question">
-                Who the hell is organising it 
-                <span>+</span>
-              </div>
-              <div class="faq__solution hidden">
-                Before human extinction.
-              </div>
-            </div>
-            <div class="faq__container">
-              <div class="faq__question">
-                What the fuck are you doing over there?
-                <span>+</span>
-              </div>
-              <div class="faq__solution hidden">
-                Before human extinction.
-              </div>
-            </div>
-            <div class="faq__container">
-              <div class="faq__question">
-                Why  are you chosing the shitty places for hackathons?
-                <span>+</span>
-              </div>
-              <div class="faq__solution hidden">
-                Before human extinction.
-              </div>
-            </div>
-            <div class="faq__container">
-              <div class="faq__question">
-                Will ya for god sake stop doing theis shit!
-                <span>+</span>
-              </div>
-              <div class="faq__solution hidden">
-                  Before human extinction.
-              </div>
-            </div>
-            <div class="faq__container">
-              <div class="faq__question">
-                Ha Ha! Just Kidding...
-                <span>+</span>
-              </div>
-              <div class="faq__solution hidden">
-                  Before human extinction.
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="sponsors" class="sponsors">
-      <div class="container">
-        <div class="sponsors__container sponsors__container--head">
-          <div class="row">
-            <img class="sponsors__img" src="img/sponsors/ieee.svg" alt="">
-          </div>
-        </div>
-
-        <div class="sponsors__container sponsors__container--main">
-          <h5 class="sponsors__heading">MAIN SPONSORS</h5>
-          <div class="row">
-            <img class="sponsors__img" src="img/sponsors/Pinmicro.svg" alt="">
-            <img class="sponsors__img" src="img/sponsors/Tenor Hut.svg" alt="">
-          </div>
-        </div>
-
-        <div class="sponsors__container sponsors__container--student-partners">
-          <h5 class="sponsors__heading">STUDENT PARTNERS</h5>
-          <div class="row">
-            <img class="sponsors__img" src="img/sponsors/msp.svg" alt="">
-            <img class="sponsors__img" src="img/sponsors/msp2.svg" alt="">
-          </div>
-        </div>
-
-        <div class="sponsors__container sponsors__container--community-partners">
-          <h5 class="sponsors__heading">COMMUNITY PARTNERS</h5>
-          <div class="row">
-            <img class="sponsors__img" src="img/sponsors/github.svg" alt="">
-            <img class="sponsors__img" src="img/sponsors/gatsby.svg" alt="">
-            <img class="sponsors__img" src="img/sponsors/kutty coders.svg" alt="">
-          </div>
-          <div class="row">
-            <img class="sponsors__img" src="img/sponsors/devfolio.svg" alt="">
-            <img class="sponsors__img" src="img/sponsors/matic.svg" alt="">
-          </div>
-          <div class="row">
-            <img class="sponsors__img" src="img/sponsors/wolfram.svg" alt="">
-          </div>
-        </div>
-
-        <div class="sponsors__container sponsors__container--media-partners">
-          <h5 class="sponsors__heading">MEDIA PARTNERS</h5>
-          <div class="row">
-            <img class="sponsors__img" src="img/sponsors/safeonnet.svg" alt="">
-          </div>
-        </div>
-
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <div class="footer__icons">
-      <a href="#"><img src="img/icons/youtube.svg" alt=""></a>
-      <a href="#"><img src="img/icons/insta.svg" alt=""></a>
-      <a href="#"><img src="img/icons/facebook.svg" alt=""></a>
-      <a href="#"><img src="img/icons/twitter.svg" alt=""></a>
-    </div>
-    <p>
-      <span>Made in assosciation with macehub</span>
-      <span>© All rights reserved - .hack ( );  2021</span>
-    </p>
-  </footer>
 
   <!-- <div style="height: 1000px;"></div> -->
   
   <!-- scripts -->
   <script src="js/app.js"></script>
+  <script src="./vendor/bitrix/js/template.js"></script>
+  <script src="./vendor/bitrix/js/page.js"></script>
 
+  <script>
+    window.addEventListener('load', function () {
+
+        var el = document.querySelector('.preloader');
+        el.style.opacity = 1;
+
+        (function fade() {
+            if ((el.style.opacity -= 0.15) < 0) {
+                window.scrollTo(0, 0);
+                el.style.display = "none";
+                controls.redraw();
+                controls.rend();
+                controls.start();
+            } else {
+                requestAnimationFrame(fade);
+            }
+        })();
+    });
+</script>
 </body>
 </html>
