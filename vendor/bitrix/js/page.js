@@ -42275,7 +42275,7 @@ $(function () {
                               (e.width = 16), (e.height = 16);
                               var t = e.getContext("2d"),
                                   i = t.createRadialGradient(e.width / 2, e.height / 2, 0, e.width / 2, e.height / 2, e.width / 2);
-                              i.addColorStop(1, "rgba(27,179,95,.3)"), i.addColorStop(1, "rgba(0,0,0,0)"), (t.fillStyle = i), t.fillRect(0, 0, e.width, e.height);
+                              i.addColorStop(1, "rgba(27,179,95,.5)"), i.addColorStop(1, "rgba(0,0,0,0)"), (t.fillStyle = i), t.fillRect(0, 0, e.width, e.height);
                               var n = new THREE.Texture(e);
                               return (n.needsUpdate = !0), n;
                           })(),

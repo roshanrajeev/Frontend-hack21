@@ -1068,7 +1068,7 @@ a {
 }
 
 .about__bg {
-  background: linear-gradient(90deg, #18112e 0, #321635 100%);
+  background: linear-gradient(90deg, #19864a 0%, #0a8240 100%);
   padding: 15rem 0 25rem 0;
   position: absolute;
   left: 0;
@@ -1102,7 +1102,7 @@ a {
   top: 0;
   right: 0;
   overflow: hidden;
-  z-index: -1;
+  z-index: 0;
 }
 
 .rewind__video-container::after {
@@ -1121,6 +1121,10 @@ a {
   transform: translateX(-13vw);
 }
 
+.rewind .container .col-6 {
+  z-index: 1;
+}
+
 .rewind__text-container {
   margin-top: 9rem;
 }
@@ -1131,6 +1135,10 @@ a {
 
 .testimonial [class^="col-"]:not(:nth-child(2n)) {
   margin-right: 1.5rem;
+}
+
+.testimonial .row .col-6 {
+  display: flex;
 }
 
 .testimonial .row:not(:last-child) {
