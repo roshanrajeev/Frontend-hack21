@@ -15,7 +15,16 @@
   .heading-primary{
     text-align: center;
     &--sub{
-      transform: translateX(-15px);
+      transform: translateY(-15px);
     }
+  }
+  .hero{
+    &__logo{
+      height: 11rem;
+      // #1bb35f
+    }
+  }
+  .heading-primary--sub{
+    letter-spacing: 6px;
   }
 }

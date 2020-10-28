@@ -2,18 +2,24 @@
   display: inline-block;
 
   &:not(:last-child) {
-    margin-right: 1rem;
+    margin-right: 3rem;
   }
   
   &--large {
-    font-size: 2.1rem;
-    width: 19.4rem;
+    // clip-path: polygon(8% 0, 100% 1%, 100% 78%, 91% 100%, 0 100%, 0 22%);
+    font-size: $default-font-size;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-weight: 400;
+    width: 23.4rem;
     //2.621
-    height: 7.4rem;
-    border-radius: 8.4rem;
+    height: 6rem;
+    // border-radius: 8.4rem;
+    border-radius: 4px;
     text-align: center;
-    line-height: 7.4rem;
+    line-height: calc(6rem - 1px);
     vertical-align: center;
+    // background-color: $color-red;
   }
 
   &--red {
@@ -21,45 +27,47 @@
   }
 
   &--ring {
-    border: 1px solid $color-blue;
-  }
-
-  &--anim {
-    border: 1px solid $color-blue;
-    color: $color-white;
+    // background-color: $color-red;
+    border: 2px solid $color-blue;
     position: relative;
-    overflow: hidden;
-    background: transparent;
-    transition: all .35s;
-
-    &::before,
-    &::after {
-      position: absolute;
-      content: "";
-      width: 100%;
-      height: 100%;
-      top: -100%;
-      left: 0;
-      background: $color-blue;
-      z-index: -1;
-      transition: all .35s;
-    }
-
-    &::before{
-      opacity: .5;
-    }
-    
-    &::after{
-      transition-delay: .2s;
-    }
-    
-    &:hover{
-      color: $color-white;
-    }
-    
-    &:hover::before,
-    &:hover::after{
-      top: 0;
-    }
   }
+
+  // &--anim {
+  //   border: 1px solid $color-blue;
+  //   color: $color-white;
+  //   position: relative;
+  //   overflow: hidden;
+  //   background: transparent;
+  //   transition: all .35s;
+
+  //   &::before,
+  //   &::after {
+  //     position: absolute;
+  //     content: "";
+  //     width: 100%;
+  //     height: 100%;
+  //     top: -100%;
+  //     left: 0;
+  //     background: $color-blue;
+  //     z-index: -1;
+  //     transition: all .35s;
+  //   }
+
+  //   &::before{
+  //     opacity: .5;
+  //   }
+    
+  //   &::after{
+  //     transition-delay: .2s;
+  //   }
+    
+  //   &:hover{
+  //     color: $color-white;
+  //   }
+    
+  //   &:hover::before,
+  //   &:hover::after{
+  //     top: 0;
+  //   }
+  // }
 }

@@ -1,4 +1,5 @@
 .nav {
+  text-transform: uppercase;
   display: flex;
   flex-direction: row;
   position: fixed;
@@ -38,10 +39,12 @@
     }
 
     &--reg {
-      border: 1px solid $color-purple;
+      border: 2px solid $color-purple;
+      // background-color: $color-purple;
       padding: 1rem 2rem;
-      border-radius: 40px;
+      border-radius: 4px;
       cursor: pointer;
+      margin-left: 5rem;
     }
   }
 
