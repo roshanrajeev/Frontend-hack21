@@ -11,6 +11,9 @@
   z-index: 100;
   transition: all 0.3s ease;
 
+  &__icons{
+    display: none;
+  }
   &__logo-box {
     position: absolute;
     left: 2rem;
@@ -54,5 +57,66 @@
 
   &.visible {
     transform: translateY(0);
+  }
+}
+
+@media(max-width: 1024px){
+  .nav{
+    &__list{
+      border: 1px solid $color-red;
+      border-radius: 4px;
+      padding: 4rem 5rem 0 0;
+      background-color: black;
+      flex-direction: column;
+      align-items: flex-end;
+      right: 3rem;
+      top: 9rem;
+      min-width: 30rem;
+      flex-basis: 30rem;
+      display: none;
+      background-color: $color-red;
+    }
+    
+    &__icons{
+      display: inline-block;
+      position: absolute;
+      transform: translate(-3rem, 3rem);
+      right: 0;
+    }
+    &__icons-container{
+      position: relative;
+      width: 3rem;
+      height: 3rem;
+      img{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        display: none;
+      }
+    }
+    .menu-active{
+      display: inline-block;
+    }
+    .nav-list-active{
+      display: flex;
+      perspective: 100px;
+      animation: rotateIn 0.625s ease;
+    }
+    &__item{
+      font-size: 1.8rem;
+      margin: 0 0 4rem 0 !important;
+      &--reg{
+        border: 3px solid white;
+      }
+    }
+  }
+}
+
+@keyframes rotateIn{
+  from{
+    transform: rotateY(90deg);
+  }
+  to{
+    transform: rotateY(0deg);
   }
 }

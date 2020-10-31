@@ -1,44 +1,3 @@
-//Shapes animation
-
-(function() {
-  setTimeout(function() {
-    if(document.readyState !== 'loading') {
-        console.log("loading");
-        fireEvent();
-    } else {
-      window.addEventListener('load', (event) => {
-        console.log("load");
-        fireEvent();
-      });
-    }
-
-    function fireEvent() {
-      document.querySelector('.loader').style.display = 'none';
-      document.body.style.overflowY = 'visible';
-    }
-  }, 100);
-  // 15000
-})();
-
-
-(function() {
-  const fast = document.getElementById('fast');
-  const slow = document.getElementById('slow');
-  const medium = document.getElementById('medium');
-  const header = document.querySelector('.header');
-  
-  window.addEventListener('scroll', function(e) {
-    let xfast = Math.floor((window.pageYOffset/header.offsetHeight)*151);
-    let xslow = Math.floor((window.pageYOffset/header.offsetHeight)*121);
-    let xmedium = Math.floor((window.pageYOffset/header.offsetHeight)*101);
-  
-    fast.style.transform = `translateY(-${xfast}px)`;
-    slow.style.transform = `translateY(-${xslow}px)`;
-    medium.style.transform = `translateY(-${xmedium}px)`;
-  });
-
-})();
-
 //About bg anim
 
 (function() {
@@ -162,12 +121,22 @@ function scrollToLoc() {
 }
 scrollToLoc();
 
-//scheduler animation
-// (function() {
-//   document.querySelector('.schedule').addEventListener('mouseover', function(e) {
-//     if(e.target.className == 'scheduler__container') {
-      
-//     }
-//   })
-  
-// })();
+
+// hamburger menu toggle
+const navbar = document.querySelector('.nav')
+const navList = document.querySelector('.nav__list')
+const navIcons = navbar.querySelector('.nav__icons')
+const navMenuIcon = navIcons.querySelector('.menu-icon')
+const navCloseIcon = navIcons.querySelector('.close-icon')
+
+navIcons.addEventListener('click', e=>{
+  if(navMenuIcon.classList.contains('menu-active')){
+    navMenuIcon.classList.remove('menu-active')
+    navList.classList.add('nav-list-active')
+    navCloseIcon.classList.add('menu-active')
+  }else{
+    navCloseIcon.classList.remove('menu-active')
+    navMenuIcon.classList.add('menu-active')
+    navList.classList.remove('nav-list-active')
+  }
+})
