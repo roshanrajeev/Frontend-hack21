@@ -4370,6 +4370,12 @@ a {
   margin-bottom: 8rem;
 }
 
+@media (max-width: 425px) {
+  .sponsors__img {
+    height: 12rem;
+  }
+}
+
 .sponsors-temp {
   position: relative;
   background: linear-gradient(90deg, #19864a 0%, #0a8240 100%);
@@ -4647,5 +4653,6 @@ a {
   height: 15rem;
   margin-bottom: -1rem;
   margin-right: 1rem;
+  filter: brightness(0.8);
 }
 /*# sourceMappingURL=main.css.map */
