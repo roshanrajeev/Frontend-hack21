@@ -4657,4 +4657,9 @@ a {
   margin-right: 1rem;
   filter: brightness(0.8);
 }
+
+.sponsors-prev .heading-secondary span {
+  color: #1bb35f;
+  display: inline;
+}
 /*# sourceMappingURL=main.css.map */

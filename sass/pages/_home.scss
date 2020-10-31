@@ -344,4 +344,10 @@
     margin-right: 1rem;
     filter: brightness(0.8);
   }
+  .heading-secondary{
+    span{
+      color: $color-red;
+      display: inline;
+    }
+  }
 }
