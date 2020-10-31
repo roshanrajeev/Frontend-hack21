@@ -1,5 +1,6 @@
 .header {
   height: 100vh;
+  transform: matrix(1, 0, 0, 1, 0, 0) !important;
 
   &__text-box {
     position: absolute;
