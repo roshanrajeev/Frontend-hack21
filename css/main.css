@@ -4175,13 +4175,22 @@ a {
 }
 
 @media (max-width: 425px) {
-  .heading-secondary {
+  .speakers {
+    margin-bottom: 6rem;
+  }
+  .speakers .heading-secondary {
     width: 95%;
   }
 }
 
 .schedule {
   margin-bottom: 25rem;
+}
+
+@media (max-width: 768px) {
+  .schedule {
+    margin-bottom: 18rem;
+  }
 }
 
 .rewind {
@@ -4224,7 +4233,7 @@ a {
 
 @media (max-width: 768px) {
   .rewind {
-    margin-bottom: 30rem;
+    margin-bottom: 18rem;
   }
   .rewind__video-container {
     width: 100%;
@@ -4284,6 +4293,9 @@ a {
 }
 
 @media (max-width: 768px) {
+  .testimonial {
+    margin-bottom: 18rem;
+  }
   .testimonial__container {
     padding: 8rem 5rem;
   }
@@ -4298,7 +4310,7 @@ a {
 }
 
 .faq {
-  margin-bottom: 25rem;
+  margin-bottom: 16rem;
 }
 
 .faq__container {
@@ -4341,8 +4353,14 @@ a {
   display: block;
 }
 
+@media (max-width: 425px) {
+  .faq {
+    margin-bottom: 10rem;
+  }
+}
+
 .sponsors {
-  margin-bottom: 10rem;
+  margin-bottom: 25rem;
 }
 
 .sponsors .row {
@@ -4396,6 +4414,9 @@ a {
 }
 
 @media (max-width: 425px) {
+  .sponsors {
+    margin-bottom: 18rem;
+  }
   .sponsors__img {
     height: 12rem;
   }

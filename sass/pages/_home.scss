@@ -35,13 +35,21 @@
   padding: 8rem 0 10rem 0;
 }
 @media(max-width: 425px){
-  .heading-secondary{
-    width: 95%;
+  .speakers{
+    margin-bottom: 6rem;
+    .heading-secondary{
+      width: 95%;
+    }
   }
 }
 
 .schedule {
   margin-bottom: 25rem;
+}
+@media(max-width: 768px){
+  .schedule{
+    margin-bottom: 18rem;
+  }
 }
 
 .rewind {
@@ -85,7 +93,7 @@
 }
 @media(max-width: 768px){
   .rewind{
-    margin-bottom: 30rem;
+    margin-bottom: 18rem;
     &__video-container{
       width: 100%;
     }
@@ -152,6 +160,7 @@
 
 @media(max-width: 768px){
   .testimonial{
+    margin-bottom: 18rem;
     &__container{
       padding: 8rem 5rem;
       
@@ -170,7 +179,7 @@
 }
 
 .faq {
-  margin-bottom: 25rem;
+  margin-bottom: 16rem;
 
   &__container {
     user-select: none;
@@ -213,8 +222,14 @@
   }
 }
 
+@media(max-width: 425px){
+  .faq{
+    margin-bottom: 10rem;
+  }
+}
+
 .sponsors {
-  margin-bottom: 10rem;
+  margin-bottom: 25rem;
 
   .row {
     justify-content: center;
@@ -274,6 +289,7 @@
 
 @media(max-width:425px){
   .sponsors {
+    margin-bottom: 18rem;
     &__img {
       height: 12rem;
     }
