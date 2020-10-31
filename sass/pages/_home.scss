@@ -267,9 +267,6 @@
 
 .why-table{
   padding: 24rem 0;
-  .container{
-    display: flex;
-  }
   .heading-secondary{
     transform: rotateZ(-90deg);
     span{
@@ -279,6 +276,7 @@
   table{
     background-color: black;
     z-index:1;
+    // overflow-x: auto;
     // text-align: center;
     margin: 0;
     padding: 0;
@@ -322,6 +320,18 @@
           }
         }
       }
+    }
+  }
+}
+
+@media(max-width: 768px){
+  .why-table{
+    .heading-secondary{
+      transform: none;
+      margin-bottom: 4rem;
+    }
+    table{
+      width: 100%;
     }
   }
 }

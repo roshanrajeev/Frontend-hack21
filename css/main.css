@@ -3389,10 +3389,6 @@ html {
   box-sizing: inherit;
 }
 
-.why-table {
-  display: none;
-}
-
 .testimonial {
   display: none;
 }
@@ -4386,10 +4382,6 @@ a {
   padding: 24rem 0;
 }
 
-.why-table .container {
-  display: flex;
-}
-
 .why-table .heading-secondary {
   transform: rotateZ(-90deg);
 }
@@ -4643,6 +4635,16 @@ a {
 
 .why-table table tr:nth-child(14) td:nth-child(4) {
   text-align: center;
+}
+
+@media (max-width: 768px) {
+  .why-table .heading-secondary {
+    transform: none;
+    margin-bottom: 4rem;
+  }
+  .why-table table {
+    width: 100%;
+  }
 }
 
 .sponsors-prev {
