@@ -3970,6 +3970,12 @@ a {
   justify-content: center;
 }
 
+.header__btn-box .heading-primary--sub {
+  margin-top: 4rem;
+  font-size: 2.8rem;
+  color: #1bb35f;
+}
+
 .header .heading-primary {
   text-align: center;
 }

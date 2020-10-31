@@ -12,6 +12,11 @@
   &__btn-box {
     display: flex;
     justify-content: center;
+    .heading-primary--sub{
+      margin-top: 4rem;
+      font-size: 2.8rem;
+      color: $color-red;
+    }
   }
   .heading-primary{
     text-align: center;
