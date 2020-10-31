@@ -4144,6 +4144,8 @@ a {
 .about {
   position: relative;
   margin-bottom: 25rem;
+  background: linear-gradient(90deg, #19864a 0%, #0a8240 100%);
+  padding: 7rem 0;
 }
 
 .about .col-sm-7 {
@@ -4162,6 +4164,12 @@ a {
   color: #111111;
   line-height: 0.3;
   z-index: 0;
+}
+
+@media (max-width: 768px) {
+  .about {
+    margin-bottom: 18rem;
+  }
 }
 
 .speakers {

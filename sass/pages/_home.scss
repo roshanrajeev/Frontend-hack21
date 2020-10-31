@@ -24,6 +24,13 @@
     line-height: 0.3;
     z-index: 0;
   }
+  background: linear-gradient(90deg, rgba(25,134,74,1) 0%, rgba(10,130,64,1) 100%);
+  padding: 7rem 0;
+}
+@media(max-width: 768px){
+  .about{
+    margin-bottom: 18rem;
+  }
 }
 
 .speakers {
