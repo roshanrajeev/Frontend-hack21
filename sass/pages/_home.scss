@@ -18,7 +18,7 @@
     left: 0;
     top: -15rem;
     width: 87%;
-    font-weight: 300 ;
+    font-weight: 300;
     font-size: 45vw;
     color: $color-grey-dark-text;
     line-height: 0.3;
@@ -218,9 +218,11 @@
 
   .row {
     justify-content: center;
+    margin-bottom: 8rem;
   }
 
   &__img {
+    height: 13rem;
     &:not(:last-child) {
       margin-right: 5rem;
     }
@@ -236,14 +238,6 @@
   }
   
   &__container {
-    &--head {
-
-    }
-
-    &--main {
-
-    }
-
     &--student-partners {
       margin-bottom: 8rem;
 
@@ -268,6 +262,14 @@
       }
     }
   }
+  .btn{
+    display: block;
+    margin: 0 auto;
+    background-color: $color-white;
+    color: $color-red;
+    font-weight: 700;
+    // letter-spacing: 3px;
+  }
 }
 
 @media(max-width:425px){
@@ -275,19 +277,24 @@
     &__img {
       height: 12rem;
     }
+    .btn{
+      letter-spacing: 1px;
+      width: 20rem;
+    }
   }
 }
 
 .sponsors-temp{
   position: relative;
   background: linear-gradient(90deg, #19864a 0%, #0a8240 100%);
-  padding: 10rem 0 5rem 0;
+  padding: 10rem 0;
 }
 
 .why-table{
   padding: 24rem 0;
   .heading-secondary{
-    transform: rotateZ(-90deg);
+    text-align: center;
+    margin-bottom: 4rem;
     span{
       color: $color-red;
     }
@@ -297,7 +304,7 @@
     z-index:1;
     // overflow-x: auto;
     // text-align: center;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     border-collapse: collapse;
     tr{
@@ -346,6 +353,7 @@
 @media(max-width: 768px){
   .why-table{
     .heading-secondary{
+      text-align: left;
       transform: none;
       margin-bottom: 4rem;
     }
@@ -361,7 +369,11 @@
     height: 15rem;
     margin-bottom: -1rem;
     margin-right: 1rem;
-    filter: brightness(0.8);
+    opacity: 0.8;
+    transition: all .1s;
+    &:hover{
+      opacity: 1;
+    }
   }
   .heading-secondary{
     span{
