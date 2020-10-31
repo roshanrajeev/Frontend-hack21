@@ -4234,6 +4234,7 @@ a {
   .rewind__video {
     width: 100%;
     transform: none;
+    filter: none;
   }
   .rewind__text-container {
     margin-top: 20rem;
