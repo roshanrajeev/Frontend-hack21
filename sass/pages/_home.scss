@@ -81,15 +81,19 @@
 .testimonial {
   margin-bottom: 25rem;
 
-  [class^="col-"] {
-    &:not(:nth-child(2n)) {
-      margin-right: 1.5rem;
-    }
-  }
+  // [class^="col-"] {
+  //   &:not(:nth-child(2n)) {
+  //     // margin-right: 1.5rem;
+  //   }
+  // }
 
   .row {
     .col-6{
       display: flex;
+      padding-left: 0;
+      &:not(:last-child){
+        padding-right: 1.5rem;
+      }
     }
     &:not(:last-child) {
       margin-bottom: 1.5rem;

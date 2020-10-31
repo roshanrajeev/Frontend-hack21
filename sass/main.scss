@@ -1,6 +1,8 @@
 @import "abstracts/mixins";
 @import "abstracts/variables";
 
+@import "bootstrap/bootstrap-grid.scss";
+
 @import "base/base";
 @import "base/typography";
 @import "base/utilities";
@@ -14,7 +16,7 @@
 @import "components/testimonial";
 
 @import "layout/footer";
-@import "layout/grid";
+// @import "layout/grid";
 @import "layout/header";
 @import "layout/navigation";
 
