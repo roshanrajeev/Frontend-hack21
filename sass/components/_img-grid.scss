@@ -13,33 +13,6 @@
       z-index: -1;
       transform: translate(-1rem, 1rem);
     }
-    
-    // &--left {
-    //   // justify-content: flex-start;
-
-    //   &::after {
-    //     left: -2rem;
-    //     top: 2rem;
-    //   }
-    // }
-
-    // &--center {
-    //   justify-content: center;
-
-    //   &::after {
-    //     left: 2rem;
-    //     top: 2rem;
-    //   }
-    // }
-
-    // &--right {
-    //   // justify-content: flex-end;
-
-    //   &::after {
-    //     right: 2rem;
-    //     top: 2rem;
-    //   }
-    // }
   }
 
   &__image {
@@ -64,20 +37,14 @@
       font-size: $default-font-size;
       font-weight: 300;
     }
-
-    // &-1 {
-    //   left: 0;
-    //   bottom: -6.4rem;
-    // }
-
-    // &-2 {
-    //   left: 4rem;
-    //   bottom: -6.4rem;
-    // }
-
-    // &-3 {
-    //   left: 8rem;
-    //   bottom: -6.4rem;
-    // }
   }
 }
+
+@media(max-width: 768px){
+  .img-grid{
+    &__container{
+      margin-bottom: 9rem;
+    }
+  }
+}
+

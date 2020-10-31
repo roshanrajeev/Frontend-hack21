@@ -27,11 +27,17 @@
 }
 
 .speakers {
+  .heading-secondary{
+    text-align: right;
+  }
   margin-bottom: 25rem;
-  // background-color: #090025 ;
   width: 100%;
-  // margin-left: 20%;
   padding: 8rem 0 10rem 0;
+}
+@media(max-width: 425px){
+  .heading-secondary{
+    width: 95%;
+  }
 }
 
 .schedule {

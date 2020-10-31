@@ -3728,6 +3728,12 @@ a {
   font-weight: 300;
 }
 
+@media (max-width: 768px) {
+  .img-grid__container {
+    margin-bottom: 9rem;
+  }
+}
+
 .loader {
   width: 100vw;
   height: 100vh;
@@ -4085,8 +4091,8 @@ a {
     align-items: flex-end;
     right: 3rem;
     top: 9rem;
-    min-width: 31.6rem;
-    flex-basis: 31.6rem;
+    min-width: 30rem;
+    flex-basis: 30rem;
     display: none;
     background-color: #1bb35f;
   }
@@ -4164,6 +4170,16 @@ a {
   margin-bottom: 25rem;
   width: 100%;
   padding: 8rem 0 10rem 0;
+}
+
+.speakers .heading-secondary {
+  text-align: right;
+}
+
+@media (max-width: 425px) {
+  .heading-secondary {
+    width: 95%;
+  }
 }
 
 .schedule {
