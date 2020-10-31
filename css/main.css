@@ -3389,10 +3389,6 @@ html {
   box-sizing: inherit;
 }
 
-.testimonial {
-  display: none;
-}
-
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
@@ -4241,12 +4237,12 @@ a {
   margin-bottom: 25rem;
 }
 
-.testimonial .row .col-6 {
+.testimonial .row .col-12 {
   display: flex;
   padding-left: 0;
 }
 
-.testimonial .row .col-6:not(:last-child) {
+.testimonial .row .col-12:not(:last-child) {
   padding-right: 1.5rem;
 }
 
@@ -4279,6 +4275,20 @@ a {
   position: absolute;
   top: -3rem;
   left: 5rem;
+}
+
+@media (max-width: 768px) {
+  .testimonial__container {
+    padding: 8rem 5rem;
+  }
+  .testimonial .row .col-12 {
+    display: flex;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .testimonial .row .col-12:not(:last-child) {
+    margin-bottom: 2rem;
+  }
 }
 
 .faq {
