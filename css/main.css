@@ -4081,7 +4081,7 @@ a {
 
 @media (max-width: 1024px) {
   .nav__list {
-    border: 1px solid #1bb35f;
+    width: calc(100% - 6rem);
     border-radius: 4px;
     padding: 4rem 5rem 0 0;
     background-color: black;
@@ -4089,10 +4089,8 @@ a {
     align-items: flex-end;
     right: 3rem;
     top: 9rem;
-    min-width: 30rem;
-    flex-basis: 30rem;
     display: none;
-    background-color: #1bb35f;
+    background: linear-gradient(90deg, #19864a 0%, #0a8240 100%);
   }
   .nav__icons {
     display: inline-block;
@@ -4120,11 +4118,15 @@ a {
     animation: rotateIn 0.625s ease;
   }
   .nav__item {
-    font-size: 1.8rem;
-    margin: 0 0 4rem 0 !important;
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin: 0 0 2.5rem 0 !important;
+  }
+  .nav__item a {
+    color: black;
   }
   .nav__item--reg {
-    border: 3px solid white;
+    border: 2px solid black;
   }
 }
 
