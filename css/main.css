@@ -3389,10 +3389,6 @@ html {
   box-sizing: inherit;
 }
 
-.testimonial {
-  display: none;
-}
-
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
@@ -3974,6 +3970,12 @@ a {
   justify-content: center;
 }
 
+.header__btn-box .heading-primary--sub {
+  margin-top: 4rem;
+  font-size: 2.8rem;
+  color: #1bb35f;
+}
+
 .header .heading-primary {
   text-align: center;
 }
@@ -4241,12 +4243,12 @@ a {
   margin-bottom: 25rem;
 }
 
-.testimonial .row .col-6 {
+.testimonial .row .col-12 {
   display: flex;
   padding-left: 0;
 }
 
-.testimonial .row .col-6:not(:last-child) {
+.testimonial .row .col-12:not(:last-child) {
   padding-right: 1.5rem;
 }
 
@@ -4279,6 +4281,20 @@ a {
   position: absolute;
   top: -3rem;
   left: 5rem;
+}
+
+@media (max-width: 768px) {
+  .testimonial__container {
+    padding: 8rem 5rem;
+  }
+  .testimonial .row .col-12 {
+    display: flex;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .testimonial .row .col-12:not(:last-child) {
+    margin-bottom: 2rem;
+  }
 }
 
 .faq {
@@ -4331,6 +4347,11 @@ a {
 
 .sponsors .row {
   justify-content: center;
+  margin-bottom: 8rem;
+}
+
+.sponsors__img {
+  height: 13rem;
 }
 
 .sponsors__img:not(:last-child) {
@@ -4366,16 +4387,28 @@ a {
   margin-bottom: 8rem;
 }
 
+.sponsors .btn {
+  display: block;
+  margin: 0 auto;
+  background-color: #fff;
+  color: #1bb35f;
+  font-weight: 700;
+}
+
 @media (max-width: 425px) {
   .sponsors__img {
     height: 12rem;
+  }
+  .sponsors .btn {
+    letter-spacing: 1px;
+    width: 20rem;
   }
 }
 
 .sponsors-temp {
   position: relative;
   background: linear-gradient(90deg, #19864a 0%, #0a8240 100%);
-  padding: 10rem 0 5rem 0;
+  padding: 10rem 0;
 }
 
 .why-table {
@@ -4383,7 +4416,8 @@ a {
 }
 
 .why-table .heading-secondary {
-  transform: rotateZ(-90deg);
+  text-align: center;
+  margin-bottom: 4rem;
 }
 
 .why-table .heading-secondary span {
@@ -4393,7 +4427,7 @@ a {
 .why-table table {
   background-color: black;
   z-index: 1;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   border-collapse: collapse;
   border: 2px solid white;
@@ -4639,6 +4673,7 @@ a {
 
 @media (max-width: 768px) {
   .why-table .heading-secondary {
+    text-align: left;
     transform: none;
     margin-bottom: 4rem;
   }
@@ -4655,7 +4690,12 @@ a {
   height: 15rem;
   margin-bottom: -1rem;
   margin-right: 1rem;
-  filter: brightness(0.8);
+  opacity: 0.8;
+  transition: all .1s;
+}
+
+.sponsors-prev .sponsors__img:hover {
+  opacity: 1;
 }
 
 .sponsors-prev .heading-secondary span {
