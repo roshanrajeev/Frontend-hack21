@@ -75,12 +75,27 @@
     transform: translateX(-13vw);
   }
   .container{
-    .col-6{
+    .col-12{
       z-index: 1;
     }
   }
   &__text-container {
     margin-top: 9rem;
+  }
+}
+@media(max-width: 768px){
+  .rewind{
+    margin-bottom: 30rem;
+    &__video-container{
+      width: 100%;
+    }
+    &__video{
+      width: 100%;
+      transform: none;
+    }
+    &__text-container{
+      margin-top: 20rem;
+    }
   }
 }
 

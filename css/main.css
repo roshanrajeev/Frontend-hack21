@@ -4216,12 +4216,28 @@ a {
   transform: translateX(-13vw);
 }
 
-.rewind .container .col-6 {
+.rewind .container .col-12 {
   z-index: 1;
 }
 
 .rewind__text-container {
   margin-top: 9rem;
+}
+
+@media (max-width: 768px) {
+  .rewind {
+    margin-bottom: 30rem;
+  }
+  .rewind__video-container {
+    width: 100%;
+  }
+  .rewind__video {
+    width: 100%;
+    transform: none;
+  }
+  .rewind__text-container {
+    margin-top: 20rem;
+  }
 }
 
 .testimonial {
