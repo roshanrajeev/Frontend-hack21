@@ -4081,7 +4081,7 @@ a {
 
 @media (max-width: 1024px) {
   .nav__list {
-    border: 1px solid #1bb35f;
+    width: calc(100% - 6rem);
     border-radius: 4px;
     padding: 4rem 5rem 0 0;
     background-color: black;
@@ -4089,10 +4089,8 @@ a {
     align-items: flex-end;
     right: 3rem;
     top: 9rem;
-    min-width: 30rem;
-    flex-basis: 30rem;
     display: none;
-    background-color: #1bb35f;
+    background: linear-gradient(90deg, #19864a 0%, #0a8240 100%);
   }
   .nav__icons {
     display: inline-block;
@@ -4120,11 +4118,15 @@ a {
     animation: rotateIn 0.625s ease;
   }
   .nav__item {
-    font-size: 1.8rem;
-    margin: 0 0 4rem 0 !important;
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin: 0 0 2.5rem 0 !important;
+  }
+  .nav__item a {
+    color: black;
   }
   .nav__item--reg {
-    border: 3px solid white;
+    border: 2px solid black;
   }
 }
 
@@ -4144,6 +4146,8 @@ a {
 .about {
   position: relative;
   margin-bottom: 25rem;
+  background: linear-gradient(90deg, #19864a 0%, #0a8240 100%);
+  padding: 7rem 0;
 }
 
 .about .col-sm-7 {
@@ -4164,6 +4168,12 @@ a {
   z-index: 0;
 }
 
+@media (max-width: 768px) {
+  .about {
+    margin-bottom: 18rem;
+  }
+}
+
 .speakers {
   margin-bottom: 25rem;
   width: 100%;
@@ -4175,13 +4185,22 @@ a {
 }
 
 @media (max-width: 425px) {
-  .heading-secondary {
+  .speakers {
+    margin-bottom: 6rem;
+  }
+  .speakers .heading-secondary {
     width: 95%;
   }
 }
 
 .schedule {
   margin-bottom: 25rem;
+}
+
+@media (max-width: 768px) {
+  .schedule {
+    margin-bottom: 18rem;
+  }
 }
 
 .rewind {
@@ -4224,7 +4243,7 @@ a {
 
 @media (max-width: 768px) {
   .rewind {
-    margin-bottom: 30rem;
+    margin-bottom: 18rem;
   }
   .rewind__video-container {
     width: 100%;
@@ -4284,6 +4303,9 @@ a {
 }
 
 @media (max-width: 768px) {
+  .testimonial {
+    margin-bottom: 18rem;
+  }
   .testimonial__container {
     padding: 8rem 5rem;
   }
@@ -4298,7 +4320,7 @@ a {
 }
 
 .faq {
-  margin-bottom: 25rem;
+  margin-bottom: 16rem;
 }
 
 .faq__container {
@@ -4341,8 +4363,14 @@ a {
   display: block;
 }
 
+@media (max-width: 425px) {
+  .faq {
+    margin-bottom: 10rem;
+  }
+}
+
 .sponsors {
-  margin-bottom: 10rem;
+  margin-bottom: 25rem;
 }
 
 .sponsors .row {
@@ -4396,6 +4424,9 @@ a {
 }
 
 @media (max-width: 425px) {
+  .sponsors {
+    margin-bottom: 18rem;
+  }
   .sponsors__img {
     height: 12rem;
   }
