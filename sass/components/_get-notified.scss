@@ -1,3 +1,10 @@
+.notification{
+    padding: 24rem 0 13rem 0 !important;
+    .heading-secondary{
+        font-size: 4rem;
+    }
+}
+
 .get-notified{
     &__form{
         font-size: 1.2rem;
@@ -7,7 +14,7 @@
     &__input{
         font-size: inherit;
         padding: 1.3rem 1.8rem;
-        width: 46rem;
+        width: 53rem;
         border-radius: 4px;
         border: none;
         outline: none;
@@ -15,7 +22,7 @@
     }
     &__submit{
         font-size: inherit;
-        width: 10rem;
+        width: 12rem;
         border-radius: 4px;
         border: none;
         outline: none;
