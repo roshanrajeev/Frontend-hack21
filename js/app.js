@@ -140,3 +140,24 @@ navIcons.addEventListener('click', e=>{
     navList.classList.remove('nav-list-active')
   }
 })
+
+// get notified
+let notify = document.querySelector(".get-notified");
+let notifyForm = document.querySelector(".get-notified__form");
+let notifyInput = notify.querySelector(".get-notified__input");
+let notifySubmit = notify.querySelector(".get-notified__submit");
+let notifyMsg = notify.querySelector(".get-notified__success-msg");
+notifyForm.addEventListener('submit',e=>{
+  e.preventDefault()
+  db.collection('hackdata').add({
+    email: notifyInput.value,
+    time: new Date(Date.now()),
+  }).then(res=>{
+    notifyForm.classList.remove("d-flex");
+    notifyForm.classList.add("d-none");
+    notifyMsg.classList.add("d-block");
+  }).catch(err => {
+    notifyMsg.classList.add('d-block');
+    notifyMsg.children[0].textContent="Sorry some error occured!";
+  })
+})

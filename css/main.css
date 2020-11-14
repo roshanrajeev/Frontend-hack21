@@ -3726,6 +3726,61 @@ a {
   }
 }
 
+.get-notified__form {
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.get-notified__input {
+  font-size: inherit;
+  padding: 1.3rem 1.8rem;
+  width: 46rem;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+  margin-right: 1rem;
+}
+
+.get-notified__submit {
+  font-size: inherit;
+  width: 10rem;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: all .1s;
+  background-color: #1bb35f;
+  color: white;
+}
+
+.get-notified__submit:hover {
+  background-color: #169b52;
+}
+
+@media (max-width: 768px) {
+  .get-notified__form {
+    display: flex;
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 425px) {
+  .get-notified__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .get-notified__input {
+    width: 100%;
+    margin-bottom: 1.5rem;
+  }
+  .get-notified__submit {
+    width: 100%;
+    padding: 1.4rem;
+  }
+}
+
 .loader {
   width: 100vw;
   height: 100vh;

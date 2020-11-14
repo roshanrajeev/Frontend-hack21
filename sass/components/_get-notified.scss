@@ -1,0 +1,55 @@
+.get-notified{
+    &__form{
+        font-size: 1.2rem;
+        display: flex;
+        justify-content: center;
+    }
+    &__input{
+        font-size: inherit;
+        padding: 1.3rem 1.8rem;
+        width: 46rem;
+        border-radius: 4px;
+        border: none;
+        outline: none;
+        margin-right: 1rem;
+    }
+    &__submit{
+        font-size: inherit;
+        width: 10rem;
+        border-radius: 4px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        transition: all .1s;
+        background-color: $color-red;
+        color: white;
+        &:hover{
+            background-color: $color-red-dark;
+        }
+    }   
+}
+@media(max-width: 768px){
+    .get-notified{
+        &__form{
+            display: flex;
+            justify-content: flex-start;
+        }
+    }
+}
+@media(max-width: 425px){
+    .get-notified{
+        &__form{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+        &__input{
+            width: 100%;
+            margin-bottom: 1.5rem;
+        }
+        &__submit{
+            width: 100%;
+            padding: 1.4rem;
+        }
+    }
+}

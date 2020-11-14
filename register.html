@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--  -->
+    <meta charset="windows-1251" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:700&amp;subset=cyrillic"
+      rel="stylesheet"
+    />
+    <!--  -->
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Righteous&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- bitrix css -->
+    <link rel="stylesheet" href="./vendor/bitrix/css/page.css" />
+    <link rel="stylesheet" href="./vendor/bitrix/css/template.css" />
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/main.css" />
+
+    <!-- fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Teko:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Trispace:wght@100;200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Hack | Register</title>
+  </head>
+  <body>
+    <!-- animation start -->
+    <style>
+      .hud-timer {
+        display: none;
+      }
+    </style>
+    <div class="preloader">
+      <!-- <div class="preloader-ring"></div> -->
+    </div>
+
+    <!-- three.js -->
+    <div id="webgl-output"></div>
+    <div class="bg-mask"></div>
+    <div id="sections">
+      <nav id="nav" class="nav">
+        <div class="nav__logo-box">
+          <a href="/index.html" class="nav__logo-link">
+            <img src="img/Logo-techie.png" alt="logo" class="nav__logo" />
+          </a>
+        </div>
+        <div class="nav__icons">
+          <div class="nav__icons-container">
+            <img src="./img/icons/menu.svg" alt="hamburger menu" class="menu-icon menu-active">
+            <img src="./img/icons/close.svg" alt="close menu" class="close-icon">
+          </div>
+        </div>
+        <ul class="nav__list">
+          <li class="nav__item"><a href="/index.html#about">Back to home</a></li>
+          <li class="nav__item nav__item--reg"><a href="#">Register</a></li>
+        </ul>
+      </nav>
+
+      <main>
+
+        <section id="why-table" class="why-table">
+          <div class="container">
+            <div class="row">
+              <div class="col-12 align-self-end">
+                <h1 class="heading-secondary">starting <span style="display: inline-block;">Soon..</span></h1>
+              </div>
+              <div class="col-12 get-notified">
+                <form class="get-notified__form d-flex">
+                    <input type="email" placeholder="REGISTER YOUR EMAIL TO GET NOTIFIED" class="get-notified__input">
+                    <button type="submit" class="get-notified__submit">SUBMIT</button>
+                </form>
+                <div class="get-notified__success-msg text-center d-none mt-4">
+                    <p class="paragraph">Thanks! You will be notified of future updates.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="footer__icons">
+          <a href="https://www.youtube.com/channel/UC_mRMYAOg4__QRBhZKJMLDQ" target="_blank"><img src="img/icons/youtube.svg" alt="" /></a>
+          <a href="https://www.instagram.com/ieee_mace_sb/" target="_blank"><img src="img/icons/insta.svg" alt="" /></a>
+          <a href="https://www.facebook.com/ieeemace/" target="_blank"><img src="img/icons/facebook.svg" alt="" /></a>
+          <a href="https://twitter.com/MaceSb" target="_blank"><img src="img/icons/twitter.svg" alt="" /></a>
+          <a href="https://www.linkedin.com/company/ieee-student-branch-mace/" target="_blank"><img src="img/icons/linkedin.png" alt="" /></a>
+        </div>
+        <p>
+          <span>Made in assosciation with <a  href="https://macehub.in/" style="color: #1bb35f;">macehub</a></span>
+          <span>© All rights reserved - .hack ( ); 2021</span>
+        </p>
+      </footer>
+    </div>
+    <!-- animation end -->
+
+    <!-- scripts -->
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-firestore.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+
+    <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+        apiKey: "AIzaSyCHgzCbyGWUSw7HfXe1FgBwOgZW8UFp8Qo",
+        authDomain: "hack21-register-data.firebaseapp.com",
+        databaseURL: "https://hack21-register-data.firebaseio.com",
+        projectId: "hack21-register-data",
+        storageBucket: "hack21-register-data.appspot.com",
+        messagingSenderId: "188524955782",
+        appId: "1:188524955782:web:e8effe04e2dc29295b2907"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    const db = firebase.firestore();
+    </script>
+
+    <script src="js/app.js"></script>
+    <script src="./vendor/bitrix/js/template.js"></script>
+    <script src="./vendor/bitrix/js/page.js"></script>
+
+    <script>
+      window.addEventListener("load", function () {
+        var el = document.querySelector(".preloader");
+        el.style.opacity = 1;
+
+        (function fade() {
+          if ((el.style.opacity -= 0.15) < 0) {
+            window.scrollTo(0, 0);
+            el.style.display = "none";
+            controls.redraw();
+            controls.rend();
+            controls.start();
+          } else {
+            requestAnimationFrame(fade);
+          }
+        })();
+      });
+    </script>
+
+    
+  </body>
+</html>
